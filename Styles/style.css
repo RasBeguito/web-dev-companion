@@ -6,7 +6,7 @@ body {
         font-size: clamp(0.4em, 0.3em + 0.8vw , 0.7em);
 }
 article, header  {
-        box-shadow:  3px 3px 0px #66757A;
+        box-shadow:  3px 3px 0px #0000005d;
         background-color: #fafafa;
         padding: 10px;
         border-radius: 8px;
@@ -35,7 +35,7 @@ h1, h2 {
         padding: 10px;
 }
 h1{
-        text-shadow: 1px 1px 0px #8ca4ac;
+        text-shadow: 1px 1px 0px #0000005d;
 }
 a {
         color: #970000;
@@ -58,7 +58,7 @@ ul.Hide > li:hover > span {
         cursor: alias;
 }
 pre {
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 picture {
         display: block;
