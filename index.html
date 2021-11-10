@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icoindex.ico" type="image/x-icon"> <!--All credits to the icon creator https://www.flaticon.com/br/icone-premium/local-na-rede-internet_3518084?term=site&page=1&position=3&page=1&position=3&related_id=3518084&origin=search-->
+    <title>HTML5-CSS3-JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p style="color: red;">Em construção (muita coisa irá mudar ainda)</p>
+<main>
+<header>
+    <h1>Acompanhamento de estudos para HTML,CSS e JavaScript</h1>
+</header><br>
+<article>
+    <div class="Nav">        
+    <h2 class="MaisMargemBotton">TAGS, Atributos e Comandos mais usados</h2>
+    </div>
+<nav>
+        <a href="tagshtml5.html" class="MaisMargemBotton">HTML</a>&emsp;
+        <a href="comandoscss.html" class="MaisMargemBotton">CSS</a>&emsp;
+        <a href="comandosjavascript.html" class="MaisMargemBotton">JavaScript</a>
+</nav>
+</article><br>
+<article>
+    <h2>HTML - Hyper Text Markup Language (Linguagem de Marcação de Hipertexto)<span style="color: red;">(rascunho)</span></h2>
+        <p> Serve para introduzir o conteúdo da página web, tal como os textos e as mídias, adicionando toda a semântica dos mesmos. Dizendo o que é o cabeçalho, título, parágrafo, imagem, citações, quais são as frases fortes, e em destaque, dizer qual parte deve ser enfatizada, etc. Através das TAGS. Criando assim a estrutura do conteúdo da página.</p>
+        <p>Algumas tags não apresentam tag de fechamento, como no caso de &lt;img src="https://google.com" alt="Site da Google"/&gt;. Existem algumas que não possuem nem o / no final da tag. Isso porque todas as informações já estão contidas no atributo, ou seja, dentro da tag.</p>
+        <p>É o sucessor da linguagem SGML (Standard Generalized Markup Language, ou Linguagem Padrão de Marcação Generalizada), que usa colchetes angulares("&lt;" e "&gt;") para separar anotações do texto comum. Em HTML essas anotações são chamadas de "tags"</p>
+        <p>Não é uma linguagem de programação, e sim uma linguagem de marcação, como ja diz o nome. Então diz-se que se desenvolve em HTML</p>
+ 
+    <h3>Elementos:</h3>
+        <p>Elementos são as peças que compõem a linguagem HTML. O parágrafo (&lt;p&gt;&lt;/p&gt;) é um elemento, assim como a cabeça (&lt;head&gt;&lt;/head&gt;), o corpo(&lt;body&gt;&lt;/body&gt;), o título (&lt;h1&gt;&lt;/h1&gt;), o cabeçalho, etc.</p>
+
+    <h3>Pai, filho e irmão:</h3>
+        <p>Quando um elemento contém outro elemento, diz-se que ele é pai (parent).</p>
+        <p>Quando um elemento está contido em outro elemento, diz-se que ele é filho (child).</p>
+        <p>Quando dois elementos estão contidos nos mesmo elementos, diz-se que são irmãos (simblings)</p>
+        <p>Por exemplo:</p>
+        <p>&emsp;html é pai de body, que por sua vez é pai de h1.</p>
+        <p>&emsp;Quanado invertido, h1 é filho de body, que por sua vez é filho de html.</p>
+        <p>&emsp;h1 é irmão de h2, pois estão ambos dentro de body, e um não está contido no outro.</p>
+
+    <h3>Atributos:</h3>
+        <p>É um jeito de definir melhor os elementos, podendo atribuir uma identificação única (id="<var>Nome que queira dar</var>"), agrupa-los em classes (class="<var>Nome que queria dar</var>"), definir uma lista ordenada para começar do número desejado (start="5"), e muitas outras coisas que queira incrementar à tag.</p>
+        Por exemplo:
+        <pre>
+&lt;blockquote id="PoemaDosSetePassos" class="Poemas"&gt;
+&lt;pre&gt;
+Ramos secos de feijão queimam para cozinhar o grão.
+No interior da panela, está o feijão a se lamentar.
+"Se temos a mesma origem e crescemos juntos,
+Por que agora há tanto sofrimento entre nós?"
+                        &lt;small&gt;Cao Zhi&lt;/small&gt;
+&lt;/pre&gt;
+&lt;/blockquote&gt;
+        </pre>
+        <p> Por meio do atributo id, o parágrafo passa a ter um identificador único, PoemaDosSetePassos, e por meio do atributo class passa a fazer parte da classe Poemas</p>
+        <p><small>*Os atributos id e class são muito importantes. Quando for fazer uso do CSS por exemplo. Você pode estilizar uma parte especifica da página usando-os</small></p>
+        <pre>
+&lt;ol start="5"&gt;
+    &lt;li&gt;Luz&lt;/li&gt;
+    &lt;li&gt;Câmera&lt;/li&gt;
+    &lt;li&gt;Ação&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+        <p>Por meio do atributo start, essa lista ordenada começará a partir do número 5.</p>
+        <p>O que define o valor do atributo, é chamado de valor mesmo.</p>
+        <p>A ordem em que os elementos se apresentam não altera o resultado final</p>
+ 
+        <h4>Atributos Globais:</h4>
+        <p>São os que podem ser usadas por qualquer tag, como por exemplo <en>id e class</en></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#list_of_global_attributes" target="blank" rel="external">Aqui</a> temos uma lista dos atributos globais</p>
+
+    <h4>Atributos Não Globais:</h4>
+        <p>São os que não podesm ser usadas por qualquer tag, são usados por uma ou mais, mas não todas. Como por exemplo <en>start,  reversed e src</en></p>
+
+    <h4>Atributos booleanos:</h4>
+        <p>São os que não possuem um valor, seu efeito surte do fato de ela estar ou não estar nas tags. Como por exemplo o atributo <en>reversed</en></p>
+</article><br>
+<article>
+    <h2>CSS - Cascading Style Sheets (Folhas de Estilo em Cascata)<span style="color: red;">(rascunho)</span></h2>
+        <p>Cascading Style Sheet (Folhas de Estilo em Cascata).</p>
+        <p>Serve para configurar o estilo da página. A parte estética. Como cores, fontes, tamanhos e posicionamentos.</p>
+        <p>Não uma linguagem de programação, e sim uma linguagem de estilização, como já diz o nome. Então diz-se que se desenvolve em CSS</p>
+        <lp>Existem 3 formas de incorporar CSS ao HTML, e sáo eles:</p>
+            <ul>
+                <li>Em linha: Dentro do corpo &lt;body&gt; da página.</li>
+                <li>Dentro da cabeça &lt;head&gt;.</li>
+                <li>Em cascata: Em um outro arquivo separado.</li>
+            </ul>
+        <p>Incorporações em linha sobrescrevem xxx, que por sua vez sobrescrevem as em Cascata.</li>
+        <p>É possível utilizar mais de um arquivo .css ao mesmo tempo, daí a palavra "Cascata", tomando cuidado para não deixar o código confuso.</p>
+</article><br>
+<article> 
+    <h2>JavaScript (Algo como RoteiroJava)<span style="color: red;">(rascunho)</span></h2>
+        <p>Java é o nome de uma ilha produtora de café, também é sinonimo de café em alguns lugares. Script é um conjunto de instruções para que uma função seja executada</p>
+        <p>Serve para adicionar dinâmica à página e lidar com os dados recebidos e enviados pelo usuário e pelo servidor</p>
+        <p>Pode ser usado tanto no front-end(Parte que o usuário interage), quanto no back-end(onde ficam armazenados os dados referentes á página)</p>
+        <p>É uma linguagem de programação</p>
+</article><br>
+<article> 
+    <h2>Para entender melhor</h2>
+        <picture>
+            <source media="(max-width: 750px)" width=350 srcset="images/htmlcar1000.png" type="image/png">
+            <source media="(max-width: 1050px)" width=700 srcset="images/htmlcar1000.png" type="image/png">
+            <img src="images/htmlcar1000.png" alt="Estrutura de um carro">
+        </picture><br>
+        <picture>
+            <source media="(max-width: 750px)" width=350 srcset="images/csscar1000.jpeg" type="image/jpeg">
+            <source media="(max-width: 1050px)" width=700 srcset="images/csscar1000.jpeg" type="image/jpeg">
+            <img src="images/csscar1000.jpeg" alt="Acabamento de um carro">
+        </picture><br>
+        <picture>
+            <source media="(max-width: 750px)" width=350 srcset="images/javascriptcar1000.png" type="image/png">
+            <source media="(max-width: 1050px)" width=700 srcset="images/javascriptcar1000.png" type="image/png">
+            <img src="images/javascriptcar1000.png" alt="Equipamentos de um carro">
+        </picture>
+</article>
+</main>
+<hr>
+<footer>
+    Por <a href="perfil.html">Rafael Beguito</a>
+</footer>
+</body>
+</html>
