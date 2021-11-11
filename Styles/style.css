@@ -60,8 +60,13 @@ ul.Hide > li:hover > span {
 pre {
     font-size: 0.7em;
 }
-picture {
+img {
+        max-width: 100%;
+        height: auto;
+}
+.img {
         display: block;
         text-align: center;
+        padding: 0px;
 }
 
