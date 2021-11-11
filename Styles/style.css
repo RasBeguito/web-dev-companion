@@ -69,4 +69,6 @@ img {
         text-align: center;
         padding: 0px;
 }
-
+small {
+        font-size: 1px;
+}
