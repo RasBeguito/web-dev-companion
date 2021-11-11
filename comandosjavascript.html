@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Styles/style.css">
+    <script>
+        window.alert ("Passe o mouse pela opção desejada");
+    </script>
 </head>
 <body>
     <p style="color: red;">Em construção (muita coisa irá mudar ainda)</p>
@@ -25,9 +28,10 @@
                             <pre>
 //<var>Comentário aqui</var>     ➔ Comentário em uma só linha
 /*<var>Comentário aqui</var>*/   ➔Comentário em bloco
-                            </pre>
-                        </Span>
-                    </li><br>                    
+                            </pre><br>
+                            <hr>
+                        </Span><br>
+                    </li>                  
                     <li>Escrever na Tela
                         <Span>
                             <pre>
@@ -35,9 +39,10 @@ document.write("<var>String</var>")
                 ou
 document.write(<var>Valor numérico</var>)
                             </pre>
-                            <small>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
-                        </Span>
-                    </li><br>
+                            <small>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small><br>
+                            <hr>
+                        </Span><br>
+                    </li>
                     <li>Adicionar Variável
                         <Span>
                             <pre>
@@ -45,9 +50,10 @@ var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>="<var>String</var>"
                 ou
 var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var>
                             </pre>
-                            <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
-                        </Span>
-                    </li><br>
+                            <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small><br>
+                            <hr>
+                        </Span><br>
+                    </li>
                     <li>Adicionar Constante
                         <Span>
                             <pre>
@@ -55,9 +61,10 @@ var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var
                 ou
     cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</var>
                             </pre>
-                            <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
-                        </Span>
-                    </li><br>
+                            <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small><br>
+                            <hr>
+                        </Span><br>
+                    </li>
                 </ul>
             <h2>Caixas de mensagens</h2>
                 <ul class=Hide>
@@ -66,9 +73,10 @@ var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var
                             <pre>
     window.alert("<var>"MensagemASerExibida"</var>")
                             </pre>
-                            <small>*Caso seja feito algum cálculo, será feito o cálculo, e convertifo em string.<br>*/n para quebra de linha<br>*Pode-se concatenar a mensagem escrita</small>
-                        </Span>
-                    </li><br>
+                            <small>*Caso seja feito algum cálculo, será feito o cálculo, e convertifo em string.<br>*/n para quebra de linha<br>*Pode-se concatenar a mensagem escrita</small><br>
+                            <hr>
+                        </Span><br>
+                    </li>
                     <li>Abrir prompt
                         <Span>
                             <pre>
@@ -77,9 +85,10 @@ window.prompt("<var>MensagemASerExibida</var>")
                             <small>*Pode-se armazenar o dado inserido em uma variável ou em uma constante:</small>
                                 <pre>
 var <var>NomeDaVariavel</var> = window.prompt("<var>Mensagem</var>")
-                                </pre>
-                        </Span>
-                    </li><br>
+                                </pre><br>
+                                <hr>
+                        </Span><br>
+                    </li>
                     <li>Caixa de confirmação
                         <Span>
                             <pre>
@@ -88,9 +97,10 @@ window.confirm("<var>MensagemASerExibida</var>")
                             <small>*Pode-se armazenar o dado inserido (true ou false) em uma variável ou em uma constante:</small>
                             <pre>
 var <var>NomeDaVariavel</var> = window.confirm("<var>Mensagem</var>")
-                            </pre>
-                        </Span>
-                    </li><br>
+                            </pre><br>
+                            <hr>
+                        </Span><br>
+                    </li>
                 </ul>
             <h2>Testes lógicos</h2>
                 <ul class=Hide>
@@ -103,41 +113,48 @@ var <var>NomeDaVariavel</var> = window.confirm("<var>Mensagem</var>")
 &lt;=   Menor ou igual
 !=   Diferente
 ==   Igual
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>Se ➔ if
+                            </pre><br>
+                            <hr>
+                        </Span><br>
+                    </li>
+                    <li>Se &emsp;&emsp;&emsp;➔ if
                         <Span>
                             <pre>
 if(<var>Teste Logico</var>){
     <var>Bloco de comando</var>;
 }
                             </pre>
-                            <small>*Se (o Teste Lógico é verdadeiro) {Então faça isso}</small>
-                        </Span>
-                    </li><br>
-                    <li>
+                            <small>*Se (o Teste Lógico é verdadeiro) {Então faça isso}</small><br>
+                            <hr>
+                        </Span><br>
+                    </li>
+                    <li>Enquanto ➔ while
                         <Span>
                             <pre>
-
+while(<var>Teste Logico</var>){
+    <var>Bloco de comando</var>;
+}
                             </pre>
-                        </Span>
-                    </li><br>
-                    <li>e ➔ &&
+                            <small>*Enquanto (o Teste Lógico é verdadeiro) {Então faça isso}</small><br>
+                            <hr>
+                        </Span><br>
+                    </li>
+                    <li>e &emsp;  &emsp;&emsp; ➔ &&
                         <Span>
                             <pre>
-<var>if</var>(
+<var>if/while</var>(
     (<var>Teste lógico</var>)&&(<var>Outro teste lógico</var>)
 ){
     <var>Bloco de comando</var>;
 }
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>ou ➔ ||
+                            </pre><br>
+                            <hr>
+                        </Span><br>
+                    </li>
+                    <li>ou &emsp;&emsp;&emsp;➔ ||
                         <Span>
                             <pre>
-<var>if</var>(
+<var>if/while</var>(
     (<var>Teste lógico</var>)
     ||
     (<var>Outro teste lógico</var>)
@@ -145,7 +162,7 @@ if(<var>Teste Logico</var>){
     <var>Bloco de comando</var>;
 }
                             </pre>
-                            <small>*Pode-se mesclar com &&:</small>
+                            <small>*Pode-se mesclar com &&:</small><br>
                             <pre>
 <var>if</var>(
     ((<var>Teste lógico</var>)&&(<var>Outro teste lógico</var>))
@@ -154,22 +171,35 @@ if(<var>Teste Logico</var>){
 ){
     <var>Bloco de comando</var>;
 }
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>Se não ➔ else
+                            </pre><br>
+                            <hr>
+                        </Span><br>
+                    </li>
+                    <li>Se não  &emsp;➔ else
                         <Span>
                             <pre>
-<var>if</var>(<var>Teste Logico</var>){
+<var>if/while</var>(<var>Teste Logico</var>){
     <var>Bloco de comando</var>
 }
 else{
     <var>Bloco de comando</var>
 }
                             </pre>
-                            <small>*Usado após if e while</small>
-                        </Span>
-                    </li><br>
+                            <small>*Usado após if e while<br>*Pode-se incluir um novo if/while ou while:</small>
+                            <pre>
+<var>if/while</var>(<var>Teste Logico</var>){
+    <var>Bloco de comando</var>
+}
+else <var>if/while</var>{
+    <var>Bloco de comando</var>
+}
+else{
+    <var>Bloco de comando</var>
+}
+                            </pre><br>
+                            <hr>
+                        </Span><br>
+                    </li>
                     <li>
                         <Span>
                             <pre>
@@ -220,7 +250,7 @@ else{
             <p>Todas as strings aceitam concatenação, através do caractere +</p>
         </article>
     </main>
-    <span class=img>
+    <span class=img style="margin-top: 10px;">
         <img src="images/PaginaEmConstrucao.png" alt="Página em construção">
     </span>
 </body>

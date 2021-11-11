@@ -57,6 +57,12 @@ ul.Hide > li:hover > span {
         display:inline;
         cursor: alias;
 }
+li:hover {
+        color:forestgreen;
+}
+li:hover > span{
+        color:rgb(0, 0, 0);
+}
 pre {
     font-size: 0.7em;
 }
