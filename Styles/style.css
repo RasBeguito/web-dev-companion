@@ -3,11 +3,11 @@ head{
         font-family: Arial, Helvetica, sans-serif;
 }       
 :root {
-        --font-x1: clamp(0.5rem, 1vw + 0.5rem,  0.8rem);
-        --font-x2: clamp(0.4rem, 1vw + 0.4rem,  0.7rem);
-        --font-x3: clamp(0.3rem, 1vw + 0.3rem,  0.6rem);
-        --font-x4: clamp(0.2rem, 1vw + 0.2rem,  0.5rem);
-        --font-x5: clamp(0.1rem, 0.8vw + 0.1rem,  0.3rem);
+        --font-x1: clamp(0.6rem, 1vw + 0.5rem,  0.9rem);
+        --font-x2: clamp(0.5rem, 1vw + 0.4rem,  0.8rem);
+        --font-x3: clamp(0.4rem, 1vw + 0.3rem,  0.7rem);
+        --font-x4: clamp(0.3rem, 1vw + 0.2rem,  0.6rem);
+        --font-x5: clamp(0.2rem, 0.8vw + 0.2rem,  0.3rem);
 }
 body {
         background-color: rgb(0, 40, 100);
