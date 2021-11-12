@@ -14,13 +14,12 @@ article, header  {
         min-width: 300px;
         margin: auto;
 }
-ul {
+ul, li {
     padding-left: 0;
+    display:inline;
+    cursor: pointer;
 }
-li {
-        display:inline;
-        cursor: pointer;
-}
+
 footer {
     font-size: smaller;
 }

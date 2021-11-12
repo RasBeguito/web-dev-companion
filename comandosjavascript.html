@@ -41,12 +41,17 @@ document.write(<var>Valor numérico</var>)</pre>
                             <hr>
                         </Span><br>
                     </li>
+                </ul>
+        </article><br>
+        <article>
+                <h2>Memória</h2>   
+                <ul class=Hide>
                     <li>Adicionar Variável
                         <Span>
                             <hr>
                             <pre>var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>="<var>String</var>"
                 ou
-var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var></pre>
+        var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var></pre>
                             <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
                             <hr>
                         </Span><br>
@@ -56,13 +61,79 @@ var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var
                             <hr>
                             <pre>cons <var>NomeDaConstante</var>,<var>OutraConstante</var>="<var>String</var>"
                 ou
-cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</var></pre>
+        cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</var></pre>
                             <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
                             <hr>
                         </Span><br>
                     </li>
+                    <li>Array<br>
+                        <ul class=Hide>
+                            <li>&emsp;Inserção de índice<br>
+                                <ul class =Hide>
+                                    <li>&emsp;&emsp;Inserção direta<br>
+                                        <Span>
+                                            <hr>
+                                            <p><small>Sem método 1:</small></p>
+                                            <pre>var <var>NomeDoArray</var>=[VarA,VarB,VarC];</pre>
+                                            <small>Sem método 2:</small>
+                                            <pre>var <var>NomeDoArray</var>=[];
+<var>NomeDoArray</var>[0]=VarA;
+<var>NomeDoArray</var>[0]=VarB;
+<var>NomeDoArray</var>[0]=VarC;</pre>
+                                            <small>*VarA assume o índice(posção) 0 do array, VarB índice 2, etc.<br>*Pode-se inserir quantas variáveis forem necessárias.</small>
+                                            <hr>
+                                        </Span>
+                                    </li>
+                                    <li>&emsp;&emsp;Método push/unshift  (final/início)
+                                        <Span>
+                                            <hr>
+                                            <pre>var <var>NomeDoArray</var>=[];
+<var>NomeDoArray</var>.push/unshift(<var>VarA</var>)
+<var>NomeDoArray</var>.push/unshift(<var>VarB</var>)
+<var>NomeDoArray</var>.push/unshift(<var>VarC</var>)</pre>
+                                            <small>*push insere no final do array, e unshift insere no início do array.<br>*Se push, VarA assume índice 0 do array, VarB índice 1 e VarC índice 2.<br>*Se unsift, Var A assume índice 2 do array, VarB índice1 e VarC índice 0.<br>*Pode-se inserir quantas variáveis forem necessárias.</small>
+                                            <hr>
+                                        </Span>
+                                    </li>
+                                </ul><br>
+                            </li>
+                            <li>&emsp;Remoção de índice<br>
+                                <ul class =Hide>
+                                    <li>&emsp;&emsp;Método pop/shift  (final/início)<br>
+                                        <Span>
+                                            <hr>
+                                            <pre><var>NomeDoArray</var>.pop/shift();</pre>
+                                            <small>*pop remove no final do array, e shift remove no início do array.</small>
+                                            <hr>
+                                        </Span>
+                                    </li>
+                                    <li>&emsp;&emsp;Método splice  (índice específico)
+                                        <Span>
+                                            <hr>
+                                            <pre><var>NomeDoArray</var>.splice(<var>Número do índice</var>,<var>Quantos índices serão removidos a paretir do índice indicado</var>);</pre>
+                                            <small>*Do array.remova(A partir desse índice,tantos índices);<BR>-Removendo índices intercalados:</small>
+                                            <pre><var>NomeDoArray</var>.splice(<var>Número do índice</var>,<var>Quantos índices serão removidos a paretir do índice indicado</var>);
+<var>NomeDoArray</var>.splice(<var>Número do índice</var>,<var>Quantos índices serão removidos a paretir do índice indicado</var>);</pre>
+                                            <small>*Remove-se os primeiros índices, depois remove-se os outros índices desejados.<br>*Quando remove-se um índice, a variável do índice seguinte assume seu lugar</small>
+
+                                            <hr>
+                                        </Span>
+                                    </li>
+                                </ul><br>
+                            </li>
+                            <li>&emsp;Recuperação de índice
+                                <Span>
+                                    <hr>
+                                    <pre>(<var>NomeDoArray</var>[<var>Índice do array</var>])</pre>
+                                    <small>-Pode-se agrupar um array dentro de outro array, sendo assim, a recuperação fica:</small>
+                                    <pre>(<var>NomeDoArray</var>[(<var>Índice do array</var>[<var>Índice do array</var>])])</pre>
+                                    <hr>
+                                </Span>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-        </article><br>
+        </article><br>       
         <article>
             <h2>Caixas de mensagens</h2>
                 <ul class=Hide>
@@ -109,7 +180,7 @@ cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</
                             <hr>
                         </Span><br>
                     </li>
-                    <li>Se/Enquanto &emsp;&emsp;&emsp;➔ if/while
+                    <li>Se/Enquanto &emsp;➔ if/while
                         <Span>
                             <hr>
                             <pre>if/while(<var>Teste Logico</var>){
@@ -136,7 +207,7 @@ else{<var>Instrução 3</var>;}</pre>
                             <hr>
                         </Span><br>
                     </li>
-                    <li>e &emsp;  &emsp;&emsp; ➔ &&
+                    <li>e&emsp;&emsp;&emsp; &emsp; &emsp; &emsp;➔ &&
                         <Span>
                             <hr>
                             <pre>if/while((<var>Teste lógico 1</var>)&&(<var>Teste lógico 2</var>)){
@@ -146,7 +217,7 @@ else{<var>Instrução 3</var>;}</pre>
                             <hr>
                         </Span><br>
                     </li>
-                    <li>ou &emsp;&emsp;&emsp;➔ ||
+                    <li>ou&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;➔ ||
                         <Span>
                             <hr>
                             <pre>if/while((<var>Teste lógico 1</var>)||(<var>Teste lógico 2</var>)){
@@ -163,7 +234,7 @@ else{<var>Instrução 3</var>;}</pre>
                             <hr>
                         </Span><br>
                     </li>
-                    <li>Se não  &emsp;➔ else
+                    <li>Se não &emsp; &emsp; &emsp;➔ else
                         <Span>
                             <hr>
                             <pre>if/while(<var>Teste Logico</var>){
@@ -185,48 +256,20 @@ else{
                             <hr>
                         </Span><br>
                     </li>
+                    <li>switch
+                        <Span>
+                            <pre>
+
+                            </pre>
+                        </Span>
+                    </li>
                     <li>
                         <Span>
                             <pre>
 
                             </pre>
                         </Span>
-                    </li><br>
-                    <li>
-                        <Span>
-                            <pre>
-
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>
-                        <Span>
-                            <pre>
-
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>
-                        <Span>
-                            <pre>
-
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>
-                        <Span>
-                            <pre>
-
-                            </pre>
-                        </Span>
-                    </li><br>
-                    <li>
-                        <Span>
-                            <pre>
-
-                            </pre>
-                        </Span>
-                    </li><br>
+                    </li>
                 </ul>
         </article><br>
         <article>
@@ -237,6 +280,10 @@ else{
             <p>Quando se está trabalhando somente com números, + passa a ser soma, e não concatenação</p>
             <p>Quando está trabalhando com uma string e um número, + funciona como concatenação</p>
             <p>Quando está trabalhando com testes lógicos com apenas uma instrução pode-se omitir as chaves {}</p>
+            <h3>If & switch</h3>
+            <h3>Array</h3>
+            <p>Uma forma de entender o que é um array, é imaginar como se fosse uma variável/constante que recebe outras variáveis/constantes</p>
+            <p>Uma boa matéria para abrir a mente quanto ao uso de arrays é"<a href="https://www.youtube.com/results?search_query=cvga" target="_blank" rel="external">Cálculo vetorial e geometria analítica</a>"</p>
         </article>
     </main>
 </body>
