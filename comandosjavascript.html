@@ -24,22 +24,22 @@
             <h2>Comandos básicos</h2>   
                 <ul class=Hide>
                     <li>Comentários
-                        <Span>
+                        <div>
                             <hr>
                             <pre>//<var>Comentário aqui</var>     ➔ Comentário em uma só linha
 /*<var>Comentário aqui</var>*/   ➔Comentário em bloco</pre>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>                  
                     <li>Escrever na Tela
-                        <Span>
+                        <div>
                             <hr>
                             <pre>document.write("<var>String</var>")
                 ou
 document.write(<var>Valor numérico</var>)</pre>
                             <small>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                 </ul>
         </article><br>
@@ -47,31 +47,31 @@ document.write(<var>Valor numérico</var>)</pre>
                 <h2>Memória</h2>   
                 <ul class=Hide>
                     <li>Adicionar Variável
-                        <Span>
+                        <div>
                             <hr>
                             <pre>var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>="<var>String</var>"
                 ou
         var <var>NomeDaVariavel</var>,<var>OutraVariavel</var>=<var>valor numérico</var></pre>
                             <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>Adicionar Constante
-                        <Span>
+                        <div>
                             <hr>
                             <pre>cons <var>NomeDaConstante</var>,<var>OutraConstante</var>="<var>String</var>"
                 ou
         cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</var></pre>
                             <small>*Não se pode usar números no início, ou  & em qualquer parte do nome de uma variável.<br>*Pode se usar HTML ou fazer concatenações(+) dentro dos parênteses quando string, assim como pode-se realizar cálculos de valores numéricos</small>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>Array<br>
                         <ul class=Hide>
                             <li>&emsp;Inserção de índice<br>
                                 <ul class =Hide>
                                     <li>&emsp;&emsp;Inserção direta<br>
-                                        <Span>
+                                        <div>
                                             <hr>
                                             <p><small>Sem método 1:</small></p>
                                             <pre>var <var>NomeDoArray</var>=[VarA,VarB,VarC];</pre>
@@ -82,10 +82,10 @@ document.write(<var>Valor numérico</var>)</pre>
 <var>NomeDoArray</var>[0]=VarC;</pre>
                                             <small>*VarA assume o índice(posção) 0 do array, VarB índice 2, etc.<br>*Pode-se inserir quantas variáveis forem necessárias.</small>
                                             <hr>
-                                        </Span>
+                                        </div>
                                     </li>
                                     <li>&emsp;&emsp;Método push/unshift  (final/início)
-                                        <Span>
+                                        <div>
                                             <hr>
                                             <pre>var <var>NomeDoArray</var>=[];
 <var>NomeDoArray</var>.push/unshift(<var>VarA</var>)
@@ -93,22 +93,22 @@ document.write(<var>Valor numérico</var>)</pre>
 <var>NomeDoArray</var>.push/unshift(<var>VarC</var>)</pre>
                                             <small>*push insere no final do array, e unshift insere no início do array.<br>*Se push, VarA assume índice 0 do array, VarB índice 1 e VarC índice 2.<br>*Se unsift, Var A assume índice 2 do array, VarB índice1 e VarC índice 0.<br>*Pode-se inserir quantas variáveis forem necessárias.</small>
                                             <hr>
-                                        </Span>
+                                        </div>
                                     </li>
                                 </ul><br>
                             </li>
                             <li>&emsp;Remoção de índice<br>
                                 <ul class =Hide>
                                     <li>&emsp;&emsp;Método pop/shift  (final/início)<br>
-                                        <Span>
+                                        <div>
                                             <hr>
                                             <pre><var>NomeDoArray</var>.pop/shift();</pre>
                                             <small>*pop remove no final do array, e shift remove no início do array.</small>
                                             <hr>
-                                        </Span>
+                                        </div>
                                     </li>
                                     <li>&emsp;&emsp;Método splice  (índice específico)
-                                        <Span>
+                                        <div>
                                             <hr>
                                             <pre><var>NomeDoArray</var>.splice(<var>Número do índice</var>,<var>Quantos índices serão removidos a paretir do índice indicado</var>);</pre>
                                             <small>*Do array.remova(A partir desse índice,tantos índices);<BR>-Removendo índices intercalados:</small>
@@ -117,18 +117,18 @@ document.write(<var>Valor numérico</var>)</pre>
                                             <small>*Remove-se os primeiros índices, depois remove-se os outros índices desejados.<br>*Quando remove-se um índice, a variável do índice seguinte assume seu lugar</small>
 
                                             <hr>
-                                        </Span>
+                                        </div>
                                     </li>
                                 </ul><br>
                             </li>
                             <li>&emsp;Recuperação de índice
-                                <Span>
+                                <div>
                                     <hr>
                                     <pre>(<var>NomeDoArray</var>[<var>Índice do array</var>])</pre>
                                     <small>-Pode-se agrupar um array dentro de outro array, sendo assim, a recuperação fica:</small>
                                     <pre>(<var>NomeDoArray</var>[(<var>Índice do array</var>[<var>Índice do array</var>])])</pre>
                                     <hr>
-                                </Span>
+                                </div>
                             </li>
                         </ul>
                     </li>
@@ -138,30 +138,30 @@ document.write(<var>Valor numérico</var>)</pre>
             <h2>Caixas de mensagens</h2>
                 <ul class=Hide>
                     <li>Alerta na tela
-                        <Span>
+                        <div>
                             <hr>
                             <pre>window.alert("<var>"MensagemASerExibida"</var>")</pre>
                             <small>*Caso seja feito algum cálculo, será feito o cálculo, e convertifo em string.<br>*/n para quebra de linha<br>*Pode-se concatenar a mensagem escrita</small>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>Abrir prompt
-                        <Span>
+                        <div>
                             <hr>
                             <pre>window.prompt("<var>MensagemASerExibida</var>")</pre>
                             <small>*Pode-se armazenar o dado inserido em uma variável ou em uma constante:</small>
                                 <pre>var <var>NomeDaVariavel</var> = window.prompt("<var>Mensagem</var>")</pre>
                                 <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>Caixa de confirmação
-                        <Span>
+                        <div>
                             <hr>
                             <pre>window.confirm("<var>MensagemASerExibida</var>")</pre>
                             <small>*Pode-se armazenar o dado inserido (true ou false) em uma variável ou em uma constante:</small>
                             <pre>var <var>NomeDaVariavel</var> = window.confirm("<var>Mensagem</var>")</pre>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                 </ul>
         </article><br>
@@ -169,7 +169,7 @@ document.write(<var>Valor numérico</var>)</pre>
             <h2>Testes lógicos</h2>
                 <ul class=Hide>
                     <li>Operadores lógicos
-                        <Span>
+                        <div>
                             <hr>
                             <pre>&gt;    Maior
 &lt;    Menor
@@ -178,10 +178,10 @@ document.write(<var>Valor numérico</var>)</pre>
 !=   Diferente
 ==   Igual</pre>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>Se/Enquanto &emsp;➔ if/while
-                        <Span>
+                        <div>
                             <hr>
                             <pre>if/while(<var>Teste Logico</var>){
     <var>Instrução 1</var>;
@@ -205,20 +205,20 @@ else{<var>Instrução 3</var>;}</pre>
     } 
 }</pre>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>e&emsp;&emsp;&emsp; &emsp; &emsp;&emsp;➔ &&
-                        <Span>
+                        <div>
                             <hr>
                             <pre>if/while((<var>Teste lógico 1</var>)&&(<var>Teste lógico 2</var>)){
     <var>Instrução</var>;
 }</pre>
                             <small>*Se/Enquanto (Teste lógico 1 e 2 forem verdadeiros) {faça isso;}</small>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>ou&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;➔ ||
-                        <Span>
+                        <div>
                             <hr>
                             <pre>if/while((<var>Teste lógico 1</var>)||(<var>Teste lógico 2</var>)){
     <var>Instrução</var>;
@@ -232,10 +232,10 @@ else{<var>Instrução 3</var>;}</pre>
     <var>Instrução</var>;
 }</pre>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>Se não &emsp; &emsp; &emsp;➔ else
-                        <Span>
+                        <div>
                             <hr>
                             <pre>if/while(<var>Teste Logico</var>){
     <var>Instrução 1</var>;
@@ -254,21 +254,21 @@ else{
     <var>Instrução 3</var>;
 }</pre>
                             <hr>
-                        </Span><br>
+                        </div><br>
                     </li>
                     <li>switch
-                        <Span>
+                        <div>
                             <pre>
 
                             </pre>
-                        </Span>
+                        </div>
                     </li>
                     <li>
-                        <Span>
+                        <div>
                             <pre>
 
                             </pre>
-                        </Span>
+                        </div>
                     </li>
                 </ul>
         </article><br>

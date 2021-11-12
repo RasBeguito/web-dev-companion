@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{
+head{
         font-family: Arial, Helvetica, sans-serif;
 }       
 :root {
@@ -61,10 +61,10 @@ a:hover {
 div.LeftAlign {
     text-align: left;
 }
-ul.Hide > li > span {
+ul.Hide > li > div {
         display: none;
 }
-ul.Hide > li:hover > span {
+ul.Hide > li:hover > div {
         display:inline;
         cursor: alias;
 }
@@ -74,10 +74,10 @@ li:hover {
 li{
         font-size: var(--font-x4);
 }
-li:hover > span{
+li:hover > div{
         color:initial;
 }
-pre{
+div{
         font-size: var(--font-x5live);
 }
 img {
