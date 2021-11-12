@@ -90,7 +90,7 @@ article.img {
         padding: 0px;
 }
 small {
-        font-size: 1px;
+        font-size: var(--font-x5live);
 }
 footer {
         size: smaller;
