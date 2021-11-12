@@ -109,23 +109,30 @@ cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</
                             <hr>
                         </Span><br>
                     </li>
-                    <li>Se &emsp;&emsp;&emsp;➔ if
+                    <li>Se/Enquanto &emsp;&emsp;&emsp;➔ if/while
                         <Span>
                             <hr>
-                            <pre>if(<var>Teste Logico</var>){
-    <var>Bloco de comando</var>;
+                            <pre>if/while(<var>Teste Logico</var>){
+    <var>Bloco de comando 1</var>;
 }</pre>
-                            <small>*Se (o Teste Lógico é verdadeiro) {Então faça isso}</small>
-                            <hr>
-                        </Span><br>
-                    </li>
-                    <li>Enquanto ➔ while
-                        <Span>
-                            <hr>
-                            <pre>while(<var>Teste Logico</var>){
-    <var>Bloco de comando</var>;
+                            <small>*Se/Enquanto (o Teste Lógico é verdadeiro) {Então faça isso;}<br>-If/while aninhado:</small>
+                            <pre>if/while(<var>Teste lógico 1</var>){
+    if/while(<var>Teste lógico 2</var>){
+        <var>Bloco de comando 1</var>;
+    }
+    else{<var>Bloco de comando 2</var>;
+}
+else{<var>Bloco de comando 3</var>;}</pre>
+                            <small>-If/while aninhado(concatenado):</small>
+                            <pre>if/while(<var>Teste lógico 1</var>){
+    <var>Bloco de comando 1</var>;
+    if/while(<var>Teste lógico 2</var>;){
+        <var>Bloco de comando 1</var> += <var>Bloco de comando 2</var>;
+    }
+    else{
+        <var>bloco de comando 1</var> += <var>Bloco de comando 3</var>;
+    } 
 }</pre>
-                            <small>*Enquanto (o Teste Lógico é verdadeiro) {Então faça isso}</small>
                             <hr>
                         </Span><br>
                     </li>
@@ -133,10 +140,11 @@ cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</
                         <Span>
                             <hr>
                             <pre><var>if/while</var>(
-    (<var>Teste lógico</var>)&&(<var>Outro teste lógico</var>)
+    (<var>Teste lógico 1</var>)&&(<var>Teste lógico 2</var>)
 ){
     <var>Bloco de comando</var>;
 }</pre>
+                            <small>Se/Enquanto (Teste lógico 1 e 2 forem verdadeiros) {faça isso;}</small>
                             <hr>
                         </Span><br>
                     </li>
@@ -144,13 +152,13 @@ cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</
                         <Span>
                             <hr>
                             <pre><var>if/while</var>(
-    (<var>Teste lógico</var>)
+    (<var>Teste lógico 1</var>)
     ||
-    (<var>Outro teste lógico</var>)
+    (<var>Teste lógico 2</var>)
 ){
     <var>Bloco de comando</var>;
 }</pre>
-                            <small>*Pode-se mesclar com &&:</small><br>
+                            <small>*Se/enquanto (Teste lógico 1 ou 2 forem verdadeiros) {Faça isso;}<br>*Pode-se mesclar com &&:</small><br>
                             <pre><var>if</var>(
     ((<var>Teste lógico</var>)&&(<var>Outro teste lógico</var>))
     ||
@@ -165,20 +173,20 @@ cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</
                         <Span>
                             <hr>
                             <pre><var>if/while</var>(<var>Teste Logico</var>){
-    <var>Bloco de comando</var>
+    <var>Bloco de comando 1</var>;
 }
 else{
-    <var>Bloco de comando</var>
+    <var>Bloco de comando 2</var>;
 }</pre>
-                            <small>*Usado após if e while<br>*Pode-se incluir um novo if/while ou while:</small>
-                            <pre><var>if/while</var>(<var>Teste Logico</var>){
-    <var>Bloco de comando</var>
+                            <small>*Se/Enquanto (Teste lógico for verdadeiro) {Faça isso;}Senão{Faça aquilo;}<br>*Usado após if e while<br>*Pode-se incluir um novo if/while ou while:</small>
+                            <pre><var>if/while</var>(<var>Teste Logico 1</var>){
+    <var>Bloco de comando 1</var>
 }
-else <var>if/while</var>{
-    <var>Bloco de comando</var>
+else <var>if/while</var>(<var>teste lógico 2</var>){
+    <var>Bloco de comando 2</var>;
 }
 else{
-    <var>Bloco de comando</var>
+    <var>Bloco de comando 3</var>;
 }</pre>
                             <hr>
                         </Span><br>
