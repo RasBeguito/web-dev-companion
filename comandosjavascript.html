@@ -13,11 +13,11 @@
     <p style="color: red;">Em construção (muita coisa irá mudar ainda)</p>
     <header>
         <h1>Companheiro do Desenvolvedor Web</h1>
-    <nav>
+        <nav>
            <a href="tagshtml5.html" class="MaisMargemBotton">HTML</a>&emsp;        
             <a href="comandoscss.html" class="MaisMargemBotton">CSS</a>&emsp;
             <a href="index.html" class="MaisMargemBotton">HOME</a>
-    </nav>
+        </nav>
     </header><br>
     <main>
         <article>
@@ -113,24 +113,24 @@ cons <var>NomeDaConstante</var>,<var>OutraConstante</var>=<var>valor numérico</
                         <Span>
                             <hr>
                             <pre>if/while(<var>Teste Logico</var>){
-    <var>Bloco de comando 1</var>;
+    <var>Instrução 1</var>;
 }</pre>
                             <small>*Se/Enquanto (o Teste Lógico é verdadeiro) {Então faça isso;}<br>-If/while aninhado:</small>
                             <pre>if/while(<var>Teste lógico 1</var>){
     if/while(<var>Teste lógico 2</var>){
-        <var>Bloco de comando 1</var>;
+        <var>Instrução 1</var>;
     }
-    else{<var>Bloco de comando 2</var>;
+    else{<var>Instrução 2</var>;
 }
-else{<var>Bloco de comando 3</var>;}</pre>
+else{<var>Instrução 3</var>;}</pre>
                             <small>-If/while aninhado(concatenado):</small>
                             <pre>if/while(<var>Teste lógico 1</var>){
-    <var>Bloco de comando 1</var>;
+    <var>Instrução 1</var>;
     if/while(<var>Teste lógico 2</var>;){
-        <var>Bloco de comando 1</var> += <var>Bloco de comando 2</var>;
+        <var>Instrução 1</var> += <var>Instrução 2</var>;
     }
     else{
-        <var>bloco de comando 1</var> += <var>Bloco de comando 3</var>;
+        <var>Instrução 1</var> += <var>Instrução 3</var>;
     } 
 }</pre>
                             <hr>
@@ -139,32 +139,26 @@ else{<var>Bloco de comando 3</var>;}</pre>
                     <li>e &emsp;  &emsp;&emsp; ➔ &&
                         <Span>
                             <hr>
-                            <pre><var>if/while</var>(
-    (<var>Teste lógico 1</var>)&&(<var>Teste lógico 2</var>)
-){
-    <var>Bloco de comando</var>;
+                            <pre>if/while((<var>Teste lógico 1</var>)&&(<var>Teste lógico 2</var>)){
+    <var>Instrução</var>;
 }</pre>
-                            <small>Se/Enquanto (Teste lógico 1 e 2 forem verdadeiros) {faça isso;}</small>
+                            <small>*Se/Enquanto (Teste lógico 1 e 2 forem verdadeiros) {faça isso;}</small>
                             <hr>
                         </Span><br>
                     </li>
                     <li>ou &emsp;&emsp;&emsp;➔ ||
                         <Span>
                             <hr>
-                            <pre><var>if/while</var>(
-    (<var>Teste lógico 1</var>)
-    ||
-    (<var>Teste lógico 2</var>)
-){
-    <var>Bloco de comando</var>;
+                            <pre>if/while((<var>Teste lógico 1</var>)||(<var>Teste lógico 2</var>)){
+    <var>Instrução</var>;
 }</pre>
-                            <small>*Se/enquanto (Teste lógico 1 ou 2 forem verdadeiros) {Faça isso;}<br>*Pode-se mesclar com &&:</small><br>
-                            <pre><var>if</var>(
+                            <small>*Se/enquanto (Teste lógico 1 ou 2 forem verdadeiros) {Faça isso;}<br>-Pode-se mesclar com &&:</small><br>
+                            <pre>if/while(
     ((<var>Teste lógico</var>)&&(<var>Outro teste lógico</var>))
     ||
     ((<var>Outro teste lógico</var>)&&(<var>Outro teste lógico</var>))
 ){
-    <var>Bloco de comando</var>;
+    <var>Instrução</var>;
 }</pre>
                             <hr>
                         </Span><br>
@@ -172,21 +166,21 @@ else{<var>Bloco de comando 3</var>;}</pre>
                     <li>Se não  &emsp;➔ else
                         <Span>
                             <hr>
-                            <pre><var>if/while</var>(<var>Teste Logico</var>){
-    <var>Bloco de comando 1</var>;
+                            <pre>if/while(<var>Teste Logico</var>){
+    <var>Instrução 1</var>;
 }
 else{
-    <var>Bloco de comando 2</var>;
+    <var>Instrução 2</var>;
 }</pre>
-                            <small>*Se/Enquanto (Teste lógico for verdadeiro) {Faça isso;}Senão{Faça aquilo;}<br>*Usado após if e while<br>*Pode-se incluir um novo if/while ou while:</small>
-                            <pre><var>if/while</var>(<var>Teste Logico 1</var>){
-    <var>Bloco de comando 1</var>
+                            <small>*Se/Enquanto (Teste lógico for verdadeiro) {Faça isso;}Senão{Faça aquilo;}<br>*Usado após if e while<br>-Pode-se incluir um novo if/while ou while:</small>
+                            <pre>if/while(<var>Teste Logico 1</var>){
+    <var>Instrução 1</var>
 }
-else <var>if/while</var>(<var>teste lógico 2</var>){
-    <var>Bloco de comando 2</var>;
+else if/while(<var>teste lógico 2</var>){
+    <var>Instrução 2</var>;
 }
 else{
-    <var>Bloco de comando 3</var>;
+    <var>Instrução 3</var>;
 }</pre>
                             <hr>
                         </Span><br>
@@ -237,12 +231,13 @@ else{
         </article><br>
         <article>
             <h2>Algumas considerações:</h2>
+            <h3>Testes lógicos</h3>
             <p>Todos os comandos devem estar dentro de &lt;script&gt;&lt;/script&gt;</p>
             <p>Todas as strings aceitam concatenação, através do caractere +</p>
+            <p>Quando se está trabalhando somente com números, + passa a ser soma, e não concatenação</p>
+            <p>Quando está trabalhando com uma string e um número, + funciona como concatenação</p>
+            <p>Quando está trabalhando com testes lógicos com apenas uma instrução pode-se omitir as chaves {}</p>
         </article>
     </main>
-    <span class=img style="margin-top: 10px;">
-        <img src="images/PaginaEmConstrucao.png" alt="Página em construção">
-    </span>
 </body>
 </html>
