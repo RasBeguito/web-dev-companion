@@ -11,6 +11,7 @@
 }
 body {
         background-color: rgb(0, 40, 100);
+        font-size: var(--font-x4);
 }
 article, header  {
         box-shadow:  0px 4px 4px 0px #000000a4;
