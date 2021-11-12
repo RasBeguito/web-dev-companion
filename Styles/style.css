@@ -1,40 +1,47 @@
 @charset "UTF-8";
-
+*{
+        font-family: Arial, Helvetica, sans-serif;
+}       
+:root {
+        --font-x1: clamp(0.5rem, 1vw + 0.5rem,  0.8rem);
+        --font-x2: clamp(0.4rem, 1vw + 0.4rem,  0.7rem);
+        --font-x3: clamp(0.3rem, 1vw + 0.3rem,  0.6rem);
+        --font-x4: clamp(0.2rem, 1vw + 0.2rem,  0.5rem);
+        --font-x5: clamp(0.1rem, 0.5vw + 0.1rem,  0.3rem);
+}
 body {
         background-color: rgb(0, 40, 100);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(0.4em, 0.3em + 0.8vw , 0.7em);
 }
 article, header  {
-        box-shadow:  3px 3px 0px #0000005d;
+        box-shadow:  0px 4px 4px 0px #000000a4;
         background-color: #fafafa;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 10px;
         max-width: 1000px;
         min-width: 300px;
         margin: auto;
 }
 ul, li {
-    padding-left: 0;
+    padding-left: 1px;
     display:inline;
     cursor: pointer;
-}
-
-footer {
-    font-size: smaller;
 }
 nav {
         text-align: center;
 }
 var {
-        color:rgb(91, 113, 134)
+        color:rgb(63, 84, 104)
 }
 h1, h2 {
         text-align: center;
-        padding: 10px;
+        padding: 8px;
 }
 h1{
-        text-shadow: 1px 1px 0px #0000005d;
+        text-shadow: 0px 2px 2px 0px  #1111115d;
+        font-size: var(--font-x1);
+}
+h2{
+        font-size: var(--font-x2);
 }
 a {
         color: #970000;
@@ -44,10 +51,7 @@ a {
         padding-left: 7px;
         padding-right: 7px;
         background-color: gold;
-        border-radius: 10px;
-}
-a:active {
-        color: yellow;
+        border-radius: 10px; 
 }
 a:hover {
         color: rgb(255, 0, 0);
@@ -65,21 +69,30 @@ ul.Hide > li:hover > span {
 li:hover {
         color:forestgreen;
 }
+li{
+        font-size: var(--font-x4);
+}
 li:hover > span{
         color:initial;
 }
-pre {
-    font-size: 0.7em;
+pre{
+        font-size: 1px;
 }
 img {
         max-width: 100%;
         height: auto;
 }
-.img {
+article.img {
         display: block;
         text-align: center;
         padding: 0px;
 }
 small {
+        font-size: 1px;
+}
+footer {
+        size: smaller;
+    }
+p{
         font-size: 1px;
 }
