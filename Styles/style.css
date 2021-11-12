@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-        background-color: rgb(224, 224, 224);
+        background-color: rgb(0, 40, 100);
         font-family: Arial, Helvetica, sans-serif;
         font-size: clamp(0.4em, 0.3em + 0.8vw , 0.7em);
 }
@@ -39,6 +39,12 @@ h1{
 a {
         color: #970000;
         text-decoration: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: gold;
+        border-radius: 10px;
 }
 a:active {
         color: yellow;
