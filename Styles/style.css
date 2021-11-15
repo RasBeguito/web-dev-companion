@@ -1,8 +1,7 @@
 @charset "UTF-8";
-head{
+head {
         font-family: Arial, Helvetica, sans-serif;
 }
-
 :root {
         --font-x1: 1rem;
         --font-x2: 0.9rem;
@@ -11,11 +10,10 @@ head{
         --font-x5: 0.6rem;
         --font-x6: 0.4rem;
 }
-
 body {
         background-color: rgb(0, 40, 100);
 }
-article, header  {
+article, header {
         box-shadow:  0px 4px 4px 0px #000000a4;
         background-color: #fafafa;
         padding: 10px;
@@ -38,19 +36,34 @@ var {
 h1, h2 {
         text-align: center;
         padding: 8px;
+        margin: 1px;
 }
-h1{
+h1 {
         text-shadow: 0px 2px 2px 0px  #1111115d;
         font-size: var(--font-x1);
 }
-h2{
+h2 {
         font-size: var(--font-x2);
 }
 h3, h4 {
         font-size: var(--font-x3);
+        padding: 2px;
+        margin: 1px;
 }
-p, li{
+p, li {
         font-size:var(--font-x4) ;
+}
+li {
+        padding: 4px;
+        margin: 2px;
+}
+div {
+        font-size: var(--font-x5);
+        padding: 0px;
+        margin: 0px;
+}
+div.Small {
+        font-size: var(--font-x6);
 }
 a {
         color: #970000;
@@ -79,11 +92,8 @@ ul.Hide > li:hover > div {
 li:hover {
         color:forestgreen;
 }
-li:hover > div{
+li:hover > div {
         color:initial;
-}
-div{
-        font-size: var(--font-x6);
 }
 img {
         max-width: 100%;
