@@ -4,15 +4,16 @@ head{
 }
 
 :root {
-        --font-x1: clamp(0.6rem, 1vw + 0.5rem,  0.9rem);
-        --font-x2: clamp(0.5rem, 1vw + 0.4rem,  0.8rem);
-        --font-x3: clamp(0.4rem, 1vw + 0.3rem,  0.7rem);
-        --font-x4: clamp(0.3rem, 1vw + 0.2rem,  0.6rem);
-        --font-x5: clamp(0.2rem, 0.8vw + 0.2rem,  0.3rem);
+        --font-x1: 1rem;
+        --font-x2: 0.9rem;
+        --font-x3: 0.8rem;
+        --font-x4: 0.7rem;
+        --font-x5: 0.6rem;
+        --font-x6: 0.4rem;
 }
+
 body {
         background-color: rgb(0, 40, 100);
-        font-size: var(--font-x4);
 }
 article, header  {
         box-shadow:  0px 4px 4px 0px #000000a4;
@@ -20,7 +21,7 @@ article, header  {
         padding: 10px;
         border-radius: 10px;
         max-width: 1000px;
-        min-width: 300px;
+        min-width: 265px;
         margin: auto;
 }
 ul, li {
@@ -44,6 +45,12 @@ h1{
 }
 h2{
         font-size: var(--font-x2);
+}
+h3, h4 {
+        font-size: var(--font-x3);
+}
+p, li{
+        font-size:var(--font-x4) ;
 }
 a {
         color: #970000;
@@ -72,14 +79,11 @@ ul.Hide > li:hover > div {
 li:hover {
         color:forestgreen;
 }
-li{
-        font-size: var(--font-x4);
-}
 li:hover > div{
         color:initial;
 }
 div{
-        font-size: var(--font-x5live);
+        font-size: var(--font-x6);
 }
 img {
         max-width: 100%;
@@ -91,9 +95,9 @@ article.img {
         padding: 0px;
 }
 small {
-        font-size: var(--font-x5live);
+        font-size: var(--font-x6);
 }
-footer {
-        size: smaller;
+.Footer {
+        size: var(--font-x6);
     }
 
