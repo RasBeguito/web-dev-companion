@@ -61,11 +61,6 @@ article, header {
         min-width: 320px;
         margin: auto;
 }
-ul, li {
-    padding-left: 1px;
-    display:inline;
-    cursor: pointer;
-}
 nav {
         text-align: center;
 }
@@ -96,11 +91,13 @@ li, ul {
         padding-top: 0px;
         padding-right: 1px;
         padding-bottom:5px;
-        padding-left: 1px;
+        padding-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
         margin-bottom: 5px;
-        margin-left: 2px;
+        margin-left: 1px;
+        display:inline;
+        cursor: pointer;
         
 }
 div {
@@ -122,6 +119,10 @@ a {
 }
 hr {
         margin: 0px;
+}
+pre {
+        margin: 0px;
+        padding: 0px;
 }
 .Small {
         font-size: var(--font-x6);
