@@ -83,6 +83,13 @@ h3, h4 {
         padding: 2px;
         margin: 1px;
 }
+p {
+        font-size: var(--font-x4);
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+}
 p, li {
         font-size:var(--font-x4) ;
 }
@@ -100,10 +107,11 @@ li, ul {
         
 }
 div {
-        font-size: var(--font-x5);
         padding: 0px;
-        margin-bottom: 2px;
-        margin-top: 0px;
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
 }
 a {
         color: #970000;
@@ -120,8 +128,12 @@ hr {
         margin: 0px;
 }
 pre {
-        margin: 0px;
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
         padding: 0px;
+        font-size: var(--font-x5);
 }
 .Small {
         font-size: var(--font-x6);
