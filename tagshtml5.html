@@ -120,7 +120,8 @@
                     <li>&emsp;Parafrase (citação) longa
                         <div>
                             <hr>
-                            <pre>&lt;blockquote&gt;&lt;/blockquoteq&gt;   &lt;!--cite="<var>Link relacionado</var>"--&gt;</pre> 
+                            <pre>&lt;blockquote&gt;&lt;/blockquoteq&gt;   </pre> 
+                            <p>&lt;!--cite="<var>Link relacionado</var>"--&gt;</p>
                             <hr>
                         </div>
                     </li>
@@ -161,7 +162,7 @@
             </li>         
             <li><a href="https://unicode-table.com/en/html-entities/" target="_blank" rel="nofollow">Símbolos especiais</a>
                 <ul class="Hide">
-                    <li>mais usados:<br>
+                    <li>mais usados<br>
                         <div>
                             <hr>
                             <pre>&amp;lt;      &lt;!--&lt; Less than (Menor que)--&gt;
@@ -172,14 +173,14 @@
         &amp;emsp;    &lt;!-- Espaço Em--&gt;|&emsp;|
         &amp;amp;     &lt;!--&--&gt;</pre>
                             <hr>
-                        </div><br>
+                        </div>
                     </li>
                 </ul>
             </li>
             <li>Adicionar ícone à aba (&lt;head&gt;)<br>
                 <div>
                     <hr>
-                    <pre>&lt;link rel="shortcut icon" href="<var>caminho/arquivo</var>.ico" type="image/x-icon"&gt;</pre>
+                    <pre class="Small">&lt;link rel="shortcut icon" href="<var>caminho/arquivo</var>.ico" type="image/x-icon"&gt;</pre>
                     <hr>
                 </div>
             </li>
@@ -222,9 +223,9 @@
                 </div>
             </li>
             <li>Tabela<br>
-                <div class="Small">
+                <div>
                     <hr>
-                    <pre>
+                    <pre class="Small">
 &lt;table&gt;
     &lt;thead&gt;                        &lt;!--Table Head (Cabeça da tabela)--&gt;
         &lt;tr&gt;                       &lt;!--Table roll (Lista da tabela)--&gt;
@@ -296,7 +297,7 @@
             <li> Baixar arquivo<br>
                 <div>
                     <hr>
-                    <pre>&lt;a href="<var>Arquivo</var>" download="<var>Arquivo</var>" type="aplication/<var>Extensão</var>"&gt;&lt;/a&gt;</pre>
+                    <pre class="Small">&lt;a href="<var>Arquivo</var>" download="<var>Arquivo</var>" type="aplication/<var>Extensão</var>"&gt;&lt;/a&gt;</pre>
                     <hr>
                 </div>
             </li>
@@ -307,7 +308,7 @@
             <li>Imagem<br>
                 <div>
                     <hr>
-                    <pre>&emsp;&lt;img width=<var>Tamanho da imagem</var> src="<var>Caminho/Arquivo</var> alt="<var>Descrição da imagem</var>"&gt;</pre>
+                    <pre class="Small">&emsp;&lt;img width=<var>Tamanho da imagem</var> src="<var>Caminho/Arquivo</var> alt="<var>Descrição da imagem</var>"&gt;</pre>
                     <hr>
                 </div>
             </li>
@@ -315,7 +316,7 @@
                 <div>
                     <hr>
                     <p>Tomando como exemplo 1 imagem:</p>
-                    <pre>
+                    <pre class="Small">
 &lt;picture&gt;
     &lt;source media="(max-width: 750px)" width=150 srcset="<var>Caminho/Arquivo</var>" type="image/<var>Extensão</var>"&gt;
     &lt;source media="(max-width: 1050px)" width=700 srcset="<var>Caminho/Arquivo</var>" type="image/<var>Extensão</var>"&gt;
@@ -337,7 +338,7 @@
             <li>Áudio<br>
                 <div>
                     <hr>
-                    <pre>
+                    <pre class="Small">
 &lt;audio&gt;   &lt;!--preload="metadata" autoplay muted controls loop--&gt;
     &lt;source src="<var>Caminho/Arquivo.mp3</var>" type="audio/mpeg"&gt;
     &lt;source src="<var>Caminho/Arquivo.ogg</var>" type="audio/ogg"&gt;
@@ -352,7 +353,7 @@
                     <li>&ensp;Do próprio servidor
                         <div>
                             <hr>
-                            <pre>
+                            <pre class="Small">
 &lt;video&gt; &lt;!--witdh="<var>?</var>" preload="metadata" autoplay muted controls loop--&gt;
     &lt;source src="<var>Caminho/Arquivo.mp4</var>" type="video/mp4"&gt;
     &lt;source src="<var>Caminho/Arquivo.m4v</var>" type="video/mp4"&gt;

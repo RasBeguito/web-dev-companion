@@ -70,9 +70,6 @@ div {
         margin-bottom: 2px;
         margin-top: 0px;
 }
-.Small {
-        font-size: var(--font-x6);
-}
 a {
         color: #970000;
         text-decoration: none;
@@ -83,6 +80,9 @@ a {
         background-color: gold;
         border-radius: 10px; 
         font-size: var(--font-x3);
+}
+.Small {
+        font-size: var(--font-x6);
 }
 a:hover {
         color: rgb(255, 0, 0);
