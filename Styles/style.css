@@ -11,6 +11,27 @@ head {
         --font-x6: 0.4rem;
         --font-x7: 0.3rem;
 }
+@media (min-width: 768px) {
+        :root {
+                font-size: 22px;
+                --font-x6: 0.5rem;
+                --font-x7: 0.5rem;
+        }
+}
+@media (min-width: 1024px) {
+        :root {
+                font-size: 24px;
+                --font-x6: 0.6rem;
+                --font-x7: 0.6rem;
+        }
+}
+@media (min-width: 1280px) {
+        :root {
+                font-size: 24px;
+                --font-x6: 0.7rem;
+                --font-x7: 0.7rem;
+        }
+}
 body {
         background-color: rgb(0, 40, 100);
 }
@@ -54,14 +75,14 @@ h3, h4 {
 p, li {
         font-size:var(--font-x4) ;
 }
-li {
+li, ul {
         padding-top: 0px;
         padding-right: 1px;
         padding-bottom:5px;
         padding-left: 1px;
         margin-top: 0px;
         margin-right: 0px;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
         margin-left: 2px;
         
 }
@@ -81,6 +102,9 @@ a {
         background-color: gold;
         border-radius: 10px; 
         font-size: var(--font-x3);
+}
+hr {
+        margin: 0px;
 }
 .Small {
         font-size: var(--font-x6);
