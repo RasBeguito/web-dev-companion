@@ -11,7 +11,14 @@ head {
         --font-x6: 0.4rem;
         --font-x7: 0.3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 568px) {
+        :root {
+                font-size: 22px;
+                --font-x6: 0.5rem;
+                --font-x7: 0.4rem;
+        }
+}
+@media (min-width: 850px) {
         :root {
                 font-size: 22px;
                 --font-x6: 0.5rem;
