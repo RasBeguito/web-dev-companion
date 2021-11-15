@@ -3,6 +3,7 @@ head {
         font-family: Arial, Helvetica, sans-serif;
 }
 :root {
+        font-size: 6vw;
         --font-x1: 1rem;
         --font-x2: 0.9rem;
         --font-x3: 0.8rem;
@@ -10,37 +11,46 @@ head {
         --font-x5: 0.6rem;
         --font-x6: 0.4rem;
         --font-x7: 0.3rem;
+        
 }
-@media (min-width: 568px) {
+@media (min-width: 360px) {
         :root {
-                font-size: 22px;
+                font-size: 4vw;
                 --font-x6: 0.5rem;
                 --font-x7: 0.4rem;
         }
 }
-@media (min-width: 850px) {
+@media (min-width: 394px) {
         :root {
-                font-size: 22px;
+                font-size: 3vw;
                 --font-x6: 0.5rem;
-                --font-x7: 0.5rem;
+                --font-x7: 0.4rem;
         }
 }
-@media (min-width: 1024px) {
+@media (min-width: 567px) {
         :root {
-                font-size: 24px;
+                font-size: 3vw;
+                --font-x6: 0.55rem;
+                --font-x7: 0.54rem;
+        }
+}
+@media (min-width: 680px) {
+        :root {
+                font-size: 25px;
+                --font-x6: 0.55rem;
+                --font-x7: 0.45rem;
+        }
+}
+@media (min-width: 980px) {
+        :root {
+                font-size: 26px;
                 --font-x6: 0.6rem;
                 --font-x7: 0.6rem;
         }
 }
-@media (min-width: 1280px) {
-        :root {
-                font-size: 24px;
-                --font-x6: 0.7rem;
-                --font-x7: 0.7rem;
-        }
-}
 body {
         background-color: rgb(0, 40, 100);
+        min-width: 340px;
 }
 article, header {
         box-shadow:  0px 4px 4px 0px #000000a4;
@@ -48,7 +58,7 @@ article, header {
         padding: 10px;
         border-radius: 10px;
         max-width: 1000px;
-        min-width: 265px;
+        min-width: 320px;
         margin: auto;
 }
 ul, li {
