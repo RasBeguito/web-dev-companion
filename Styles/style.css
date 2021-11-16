@@ -11,7 +11,6 @@ head {
         --font-x5: 0.6rem;
         --font-x6: 0.4rem;
         --font-x7: 0.3rem;
-        
 }
 @media (min-width: 360px) {
         :root {
@@ -49,10 +48,10 @@ head {
         }
 }
 body {
-        background-color: rgb(0, 40, 100);
+        background-color: rgb(0, 55, 100);
 }
 article, header {
-        box-shadow:  0px 4px 4px 0px #000000a4;
+        box-shadow:  0px 8px 8px 0px #00000086;
         background-color: #fafafa;
         padding: 10px;
         border-radius: 10px;
@@ -94,17 +93,13 @@ p, li {
         font-size:var(--font-x4) ;
 }
 li, ul {
-        padding-top: 0px;
-        padding-right: 1px;
-        padding-bottom:0px;
-        padding-left: 0px;
+        padding: 0px;
         margin-top: 0px;
         margin-right: 0px;
         margin-bottom: 10px;
         margin-left: 1px;
         display:inline;
         cursor: pointer;
-        
 }
 div {
         padding: 0px;
