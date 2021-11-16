@@ -67,13 +67,105 @@
                         </div>
                     </li>
                 </ul>
+        </article><br>
+        <article>
+            <h2>Seletores</h2>
+                <ul class="Hide">
+                        <li>Universal<br>
+                            <div>
+                                <hr>
+                                <pre>*{
+}</pre>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>Por tag<br>
+                            <div>
+                                <hr>
+                                <pre><var>Tag</var>{
+}</pre>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>por classe (class="")<br>
+                            <div>
+                                <hr>
+                                <pre>.<var>NomeDaClass</var>{
+}
+    ou
+<var>Tag</var>.<var>NomeDaClass</var> {
+}</pre>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>por identificador (id="")<br>
+                            <div>
+                                <hr>
+                                <pre>#<var>NomeDoId</var>{
+}
+    ou
+<var>Tag</var>#<var>NomeDoId</var> {
+}</pre>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>por atributo<br>
+                            <div>
+                                <hr>
+                                <pre><var>Tag</var> [<var>Atributo</var>="<var>Valor do atributo</var>"]{
+}</pre>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>Filha<br>
+                            <div>
+                                <hr>
+                                <pre><var>Tag/class</var> > <var>Tag/class filha</var>{
+}</pre>
+                                <hr>
+                            </div>
+                        </li>
+                        <li>irmã<br>
+                            <div>
+                                <hr>
+                                <pre><var>Tag/class</var> + <var>Tag/class irmã</var>{
+}</pre>
+                                <hr>
+                            </div>
+
+
+
+
+                        <li>Seletores pseudo<br>
+                            <ul class="Hide">
+                                <li>&emsp;Excessão<br>
+                                    <div>
+                                        <hr>
+                                        <pre><var>Tag/class</var> :not(.<var>Classe excluída</var>) {
+}</pre>
+                                    <small>*Tal tag/classe, menos as que forem de tal classe, receberão a estilização</small>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li>&emsp;Interação com cursor<br>
+                                    <div>
+                                        <hr>
+                                        <pre><var>Tag/class</var> :hoover) {
+}</pre>
+                                    <small>*A estilização acontecerá quando passar o cursor por cima do conteudo da tag/class</small>
+                                        <hr>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                </ul>
         </article>
-    </main>
-    <span class=img>
-        <img src="images/PaginaEmConstrucao.png" alt="Página em construção">
-    </span>
+    </main><br>
     <footer>
         <a href="index.html">HOME</a>
     </footer>
+    <span>
+        <img src="images/PaginaEmConstrucao.png" alt="Página em construção">
+    </span>
 </body>
 </html>
