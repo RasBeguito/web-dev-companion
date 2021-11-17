@@ -176,3 +176,7 @@ small {
 span.Footer {
         color: #fafafa;
 }
+#Reverse {
+        display: inline-block;     
+        -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
