@@ -24,7 +24,7 @@
         <article>
             <h2>Metadata</h2>
                 <ul class="Hide">
-                    <li>Cabeça<br>
+                    <li>Cabeça &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/head" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
                             <pre>&lt;head&gt;&lt;/head&gt;</pre>
@@ -34,26 +34,64 @@
                             <hr>
                         </div>
                     </li>
-                    <li>Título<br>
+                    <li>Título &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/title" target="_blank" rel="external">MDN</a></span><br>
                         <div>
+                            <hr>
                             <pre>&lt;title&gt;&lt;/title&gt;</pre>
                             <P>*Define o título do documento.</P>
                             <p>*Possíveis atributos: Globais.</p>
                             <p>*É sempre usado dentro da &lt;head&gt; da página.</p>
+                            <hr>
                         </div>
                     </li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta#attr-name" target="blank" rel="external"></href>Meta</a><br>
+                    <li>Metadata genérica &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta#attr-name" target="_blank" rel="external">MDN</a></span><br>
                         <div>
+                            <hr>
                             <pre>&lt;meta&gt;</pre>
                             <p>*Define qualquer informação de metadados que não podem ser definidos por outros elementos HTML.</p>
-                            <p>*Possíveis atributos: *Globais <!--TODO: Existem diferenças para essa TAG meta (Ler o manual e incrementar)--></p>
-                            <p></p>
+                            <p>*Possíveis atributos: *Globais     <small style="color: red;">(incompleto por enquanto)</small><!--TODO: Existem diferenças para essa TAG meta (Ler o manual e incrementar as demais informações)--></p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Link padrão na página &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/base" target="_blank" rel="external">MDN</a></span><br>
+                        <div>
+                            <hr>
+                            <pre>&lt;head&gt;
+    &lt;base href="<var>https://www.siteexemplo.com.br</var>"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="<var>/contato</var>"&gt;<var>Texto exemplo</var>&lt;/a&gt;
+&lt;/body&gt;</pre>
+                            <p>*define uma URL padrão para todos os links da página.</p>
+                            <p>*Possíveis atributos: Globais, href, target.</p>
+                            <p>*Após ser definido na &lt;head&gt;, é preciso somente o complemento do link na &lt;body&gt;.</p>
+                            <p>*Permitido somente 1 TAG por página. Caso haja mais de 1, somente a primeira será utilizada.</p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Vincular à um documento externo &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/link" target="_blank" rel="external">MDN</a></span><br>
+                        <div>
+                            <hr>
+                            <pre>&lt;link&gt;</pre>
+                            <p>*Associa o documento atual à um externo.</p>
+                            <p>*Possíveis atributos: Globais, as, href, hreflang, media, rel, type, ⚠️crossorigin, ⚠️disabled, ⚠️methods, ⚠️sizes, ⚠️target.</p>
+                            <p>*Escrito apenas no elemento head.</p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Estilo &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/style" target="_blank" rel="external">MDN</a></span>
+                        <div>
+                            <hr>
+                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                            <p>*Define estilos dentro do próprio arquivo HTLM.</p>
+                            <p>*Possíveis atributos: Globais, type, media, scoped, title, disabled.</p>
+                            <hr>
                         </div>
                     </li>
                 </ul>
         </article><br>
         <article>
-            <h2>Semânticas</h2>
+            <h2>Semânticas<span style="color: red;"><small>(rascunho)</small></span></h2>
                 <ul class="Hide">
                     <li>Títulos por hierarquia<br>
                         <div>
@@ -161,7 +199,7 @@
                 </ul>
         </article><br>
         <article>
-            <h2>Não semanticas</h2>
+            <h2>Não semanticas<span style="color: red;"><small>(rascunho)</small></span></h2>
                 <ul class="Hide">
                     <li>Quebra de linha<br>
                         <div>
