@@ -85,29 +85,30 @@ h3, h4 {
         margin: 1px;
 }
 p {
-        font-size: var(--font-x4);
-        margin-top: 5px;
+        margin-top: 1px;
         margin-right: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 1px;
         margin-left: 0px;
+        text-align: left;
+        font-size: var(--font-x5);
 }
-p, li {
+li {
         font-size:var(--font-x4) ;
 }
 li, ul {
         padding: 0px;
         margin-top: 0px;
         margin-right: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         margin-left: 1px;
         display:inline;
         cursor: pointer;
 }
 div {
         padding: 0px;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-right: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         margin-left: 0px;
 }
 a {

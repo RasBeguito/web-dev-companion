@@ -21,352 +21,383 @@
     </nav>
     </header><br>
     <main>
-    <article>
-        <h2>Semânticas</h2>
-            <ul class="Hide">
-                <li>Títulos por hierarquia<br>
-                    <div>
+        <article>
+            <h2>Metadata</h2>
+                <ul class="Hide">
+                    <li>Cabeça<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;head&gt;&lt;/head&gt;</pre>
+                            <p>*Providencia informações gerais (metadados) sobre  document, incluindo seu título e links para scripts e folhas de estilos.</p>
+                            <p>*Possíveis atributos: Globais.</p>
+                            <p>*Possiveis elementos: &lt;title&gt;, &lt;base&gt;, &lt;link&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;script&gt;, &lt;noscript&gt;.</p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Título<br>
+                        <div>
+                            <pre>&lt;title&gt;&lt;/title&gt;</pre>
+                            <P>*Define o título do documento.</P>
+                            <p>*Possíveis atributos: Globais.</p>
+                            <p>*É sempre usado dentro da &lt;head&gt; da página.</p>
+                        </div>
+                    </li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta#attr-name" target="blank" rel="external"></href>Meta</a><br>
+                        <div>
+                            <pre>&lt;meta&gt;</pre>
+                            <p>*Define qualquer informação de metadados que não podem ser definidos por outros elementos HTML.</p>
+                            <p>*Possíveis atributos: *Globais <!--TODO: Existem diferenças para essa TAG meta (Ler o manual e incrementar)--></p>
+                            <p></p>
+                        </div>
+                    </li>
+                </ul>
+        </article><br>
+        <article>
+            <h2>Semânticas</h2>
+                <ul class="Hide">
+                    <li>Títulos por hierarquia<br>
+                        <div>
+                            <hr>
+                                <pre>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&lt; &lt;h5&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Parágrafo<br>
+                        <div>
+                            <hr>
+                        <pre>&lt;p&gt;</pre>
                         <hr>
-                            <pre>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&lt; &lt;h5&gt;</pre>
+                        </div>
+                    </li>
+                    <li>Manter formatação igual à do código<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;pre&gt;&lt;/pre&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Termo em destaque (Negrito)<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;strong&gt;&lt;/strong&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Termo com ênfase (Itálico)<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;em&gt;&lt;/em&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Marca texto<br>
+                        <div>
+                            <hr>
+                        <pre>&lt;mark&gt;&lt;/mark&gt;</pre>
                         <hr>
-                    </div>
-                </li>
-                <li>Parágrafo<br>
-                    <div>
-                        <hr>
-                    <pre>&lt;p&gt;</pre>
-                    <hr>
-                    </div>
-                </li>
-                <li>Manter formatação igual à do código<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;pre&gt;&lt;/pre&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Termo em destaque (Negrito)<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;strong&gt;&lt;/strong&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Termo com ênfase (Itálico)<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;em&gt;&lt;/em&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Marca texto<br>
-                    <div>
-                        <hr>
-                    <pre>&lt;mark&gt;&lt;/mark&gt;</pre>
-                    <hr>
-                    </div>
-                </li>
-                <li>Texto pequeno<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;small&gt;&lt;/small&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Texto deletado (Riscado)<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;del&gt;&lt;/del&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Texto inserido (Sublinhado)<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;ins&gt;&lt;/ins&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Texto sobrescrito (3<sup>2</sup>)<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;sup&gt;&lt;/sup&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Subescrito (H<sub>2</sub>O)<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;sub&gt;&lt;/sub&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Abreviações<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;abbr title="<var>Significado da Sigla</var>"&gt;&lt;/abbr&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Citações<br>
-                    <ul class="Hide">
-                        <li>&emsp;Parafrase (citação) curta
-                            <div>
-                                <hr>
-                                <pre>&lt;q&gt;&lt;/q&gt;</pre>
-                                <hr>
-                            </div><br>
-                        </li>
-                        <li>&emsp;Parafrase (citação) longa
-                            <div>
-                                <hr>
-                                <pre>&lt;blockquote&gt;&lt;/blockquoteq&gt;</pre> 
-                                <p>&lt;!--cite="<var>Link relacionado</var>"--&gt;</p>
-                                <hr>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-    </article><br>
-    <article>
-        <h2>Não semanticas</h2>
-            <ul class="Hide">
-                <li>Quebra de linha<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;br&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Linha horizontal<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;hr&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Cria uma "caixa" em um elemento<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;div&gt;&lt;/div&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Comentários<br>  
-                    <div>
-                        <hr>
-                        <pre>&lt;!-- <var>Comentário Aqui</var> --&gt;</pre>
-                        <hr>
-                    </div> 
-                </li>         
-                <li><a href="https://unicode-table.com/en/html-entities/" target="_blank" rel="nofollow">Símbolos especiais</a>
-                    <ul class="Hide">
-                        <li>mais usados<br>
-                            <div>
-                                <hr>
-                                <pre>&amp;lt;      &lt;!--&lt; Less than (Menor que)--&gt;
-&amp;gt;      &lt;!--&gt; More than (Maior que)--&gt;
-&amp;thinsp;  &lt;!--Pequeno espaço--&gt;|&thinsp;|
-&amp;nbsp;    &lt;!--No break space (Espaço sem quebra)--&gt;|&nbsp;|
-&amp;ensp;    &lt;!-- Espaço En--&gt;|&ensp;|
-&amp;emsp;    &lt;!-- Espaço Em--&gt;|&emsp;|
-&amp;amp;     &lt;!--&--&gt;</pre>
-                                <hr>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li>Adicionar ícone à aba (&lt;head&gt;)<br>
-                    <div>
-                        <hr>
-                        <pre class="Small">&lt;link rel="shortcut icon" href="<var>caminho/arquivo</var>.ico" type="image/x-icon"&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-            </ul><br>
-        <h3>Agrupamentos</h3>
-            <ul class="Hide">
-                <li>Cabeçalho<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;header&gt;&lt;/header&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Princial<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;main&gt;&lt;/main&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Artigo<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;article&gt;&lt;/article&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Divisão<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;div&gt;&lt;/div&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Seleciona uma parte específica da página<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;div&gt;&lt;/div&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Tabela<br>
-                    <div>
-                        <hr>
-                        <pre class="Small">&lt;table&gt;
-    &lt;thead&gt;                        &lt;!--Table Head (Cabeça da tabela)--&gt;
-        &lt;tr&gt;                       &lt;!--Table roll (Lista da tabela)--&gt;
-            &lt;th&gt;<var>Nome</var>&lt;/th&gt;          &lt;!--Table heading (Cabeçalho da tabela)--&gt;
-            &lt;th&gt;<var>Telefone</var>&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;                        &lt;!--Table Body (Corpo da tabela)--&gt;
-        &lt;tr&gt;
-            &lt;td&gt;<var>Gabriel</var>&lt;/td&gt;       &lt;!--Table Data (Dado da tabela)--&gt;
-            &lt;td&gt;<var>2345678</var>&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;<var>Ana</var>&lt;/td&gt;
-            &lt;td&gt;<var>26mole6mole6dura</var>&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;tbody&gt;
-    &lt;/tbody&gt;
-&gt;/table&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-            </ul><br>
-        <h3>Listas</h3>
-            <ul class="Hide">
-                <li>Lista ordenada<br>
-                    <div>
-                        <hr>
-                        <pre>&emsp;&lt;ol&gt;&lt;/ol&gt;  &lt;!--type="1""A""a""I""i"" start="1"""2""3"&gt;</pre> 
-                        <hr>
-                    </div>
-                </li>
-                <li> Lista desordenada<br>
-                    <div>
-                        <hr>
-                    <pre>&emsp;&lt;ul&gt;&lt;/ul&gt;   &lt;--type="circle""disc""square"--&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li> A lista em si. Deve ser filha de uma ol ou de uma ul<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;li&gt;&lt;/li&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li>Texto pequeno<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;small&gt;&lt;/small&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Texto deletado (Riscado)<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;del&gt;&lt;/del&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Texto inserido (Sublinhado)<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;ins&gt;&lt;/ins&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Texto sobrescrito (3<sup>2</sup>)<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;sup&gt;&lt;/sup&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Subescrito (H<sub>2</sub>O)<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;sub&gt;&lt;/sub&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Abreviações<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;abbr title="<var>Significado da Sigla</var>"&gt;&lt;/abbr&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Citações<br>
+                        <ul class="Hide">
+                            <li>&emsp;Parafrase (citação) curta
+                                <div>
+                                    <hr>
+                                    <pre>&lt;q&gt;&lt;/q&gt;</pre>
+                                    <hr>
+                                </div><br>
+                            </li>
+                            <li>&emsp;Parafrase (citação) longa
+                                <div>
+                                    <hr>
+                                    <pre>&lt;blockquote&gt;&lt;/blockquoteq&gt;</pre> 
+                                    <p>&lt;!--cite="<var>Link relacionado</var>"--&gt;</p>
+                                    <hr>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </article><br>
+        <article>
+            <h2>Não semanticas</h2>
+                <ul class="Hide">
+                    <li>Quebra de linha<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;br&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Linha horizontal<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;hr&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Cria uma "caixa" em um elemento<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;div&gt;&lt;/div&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Comentários<br>  
+                        <div>
+                            <hr>
+                            <pre>&lt;!-- <var>Comentário Aqui</var> --&gt;</pre>
+                            <hr>
+                        </div> 
+                    </li>         
+                    <li><a href="https://unicode-table.com/en/html-entities/" target="_blank" rel="nofollow">Símbolos especiais</a>
+                        <ul class="Hide">
+                            <li>mais usados<br>
+                                <div>
+                                    <hr>
+                                    <pre>&amp;lt;      &lt;!--&lt; Less than (Menor que)--&gt;
+    &amp;gt;      &lt;!--&gt; More than (Maior que)--&gt;
+    &amp;thinsp;  &lt;!--Pequeno espaço--&gt;|&thinsp;|
+    &amp;nbsp;    &lt;!--No break space (Espaço sem quebra)--&gt;|&nbsp;|
+    &amp;ensp;    &lt;!-- Espaço En--&gt;|&ensp;|
+    &amp;emsp;    &lt;!-- Espaço Em--&gt;|&emsp;|
+    &amp;amp;     &lt;!--&--&gt;</pre>
+                                    <hr>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Adicionar ícone à aba (&lt;head&gt;)<br>
+                        <div>
+                            <hr>
+                            <pre class="Small">&lt;link rel="shortcut icon" href="<var>caminho/arquivo</var>.ico" type="image/x-icon"&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                </ul><br>
+            <h3>Agrupamentos</h3>
+                <ul class="Hide">
+                    <li>Cabeçalho<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;header&gt;&lt;/header&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Princial<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;main&gt;&lt;/main&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Artigo<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;article&gt;&lt;/article&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Divisão<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;div&gt;&lt;/div&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Seleciona uma parte específica da página<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;div&gt;&lt;/div&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Tabela<br>
+                        <div>
+                            <hr>
+                            <pre class="Small">&lt;table&gt;
+        &lt;thead&gt;                        &lt;!--Table Head (Cabeça da tabela)--&gt;
+            &lt;tr&gt;                       &lt;!--Table roll (Lista da tabela)--&gt;
+                &lt;th&gt;<var>Nome</var>&lt;/th&gt;          &lt;!--Table heading (Cabeçalho da tabela)--&gt;
+                &lt;th&gt;<var>Telefone</var>&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;                        &lt;!--Table Body (Corpo da tabela)--&gt;
+            &lt;tr&gt;
+                &lt;td&gt;<var>Gabriel</var>&lt;/td&gt;       &lt;!--Table Data (Dado da tabela)--&gt;
+                &lt;td&gt;<var>2345678</var>&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;<var>Ana</var>&lt;/td&gt;
+                &lt;td&gt;<var>26mole6mole6dura</var>&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tbody&gt;
+        &lt;/tbody&gt;
+    &gt;/table&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                </ul><br>
+            <h3>Listas</h3>
+                <ul class="Hide">
+                    <li>Lista ordenada<br>
+                        <div>
+                            <hr>
+                            <pre>&emsp;&lt;ol&gt;&lt;/ol&gt;  &lt;!--type="1""A""a""I""i"" start="1"""2""3"&gt;</pre> 
+                            <hr>
+                        </div>
+                    </li>
+                    <li> Lista desordenada<br>
+                        <div>
+                            <hr>
+                        <pre>&emsp;&lt;ul&gt;&lt;/ul&gt;   &lt;--type="circle""disc""square"--&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li> A lista em si. Deve ser filha de uma ol ou de uma ul<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;li&gt;&lt;/li&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
 
-        <h3>Hiperlinks</h3>
-            <ul class="Hide">
-                <li>Link Externo<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;a href="<var>Link</var>"&gt;&lt;/a&gt;</pre>
-                        <small>&lt;!--target="_blank" rel="external""nofollow"--&gt;</small>
-                        <hr>
-                    </div>
-                </li>
-                <li> Link interno<br>
-                    <div>
-                        <hr>
-                        <pre>&lt;a href="<var>Arquivo</var>"&gt;&lt;/a&gt;</pre>
-                        <small>&lt;!--"<var>Caminho/Arquivo</var>""../<var>Arquivo</var>" rel="next""prev"--&gt;</small>
-                        <hr>
-                    </div>
-                </li>
-                <li> Baixar arquivo<br>
-                    <div>
-                        <hr>
-                        <pre class="Small">&lt;a href="<var>Arquivo</var>" download="<var>Arquivo</var>" type="aplication/<var>Extensão</var>"&gt;&lt;/a&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-            </ul>
+            <h3>Hiperlinks</h3>
+                <ul class="Hide">
+                    <li>Link Externo<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;a href="<var>Link</var>"&gt;&lt;/a&gt;</pre>
+                            <small>&lt;!--target="_blank" rel="external""nofollow"--&gt;</small>
+                            <hr>
+                        </div>
+                    </li>
+                    <li> Link interno<br>
+                        <div>
+                            <hr>
+                            <pre>&lt;a href="<var>Arquivo</var>"&gt;&lt;/a&gt;</pre>
+                            <small>&lt;!--"<var>Caminho/Arquivo</var>""../<var>Arquivo</var>" rel="next""prev"--&gt;</small>
+                            <hr>
+                        </div>
+                    </li>
+                    <li> Baixar arquivo<br>
+                        <div>
+                            <hr>
+                            <pre class="Small">&lt;a href="<var>Arquivo</var>" download="<var>Arquivo</var>" type="aplication/<var>Extensão</var>"&gt;&lt;/a&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
 
-        <h3>Mídias</h3>
-            <ul class="Hide">
-                <li>Imagem<br>
-                    <div>
-                        <hr>
-                        <pre class="Small">&lt;img width=<var>Tamanho da imagem</var> src="<var>Caminho/Arquivo</var> alt="<var>Descrição da imagem</var>"&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Imagem dinâmica<br>
-                    <div>
-                        <hr>
-                        <p>Tomando como exemplo 1 imagem:</p>
+            <h3>Mídias</h3>
+                <ul class="Hide">
+                    <li>Imagem<br>
+                        <div>
+                            <hr>
+                            <pre class="Small">&lt;img width=<var>Tamanho da imagem</var> src="<var>Caminho/Arquivo</var> alt="<var>Descrição da imagem</var>"&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Imagem dinâmica<br>
+                        <div>
+                            <hr>
+                            <p>Tomando como exemplo 1 imagem:</p>
+                            <pre class="Smallest">&lt;picture&gt;
+        &lt;source media="(max-width: 750px)" width=150 srcset="<var>Caminho/Arquivo</var>" type="image/<var>Extensão</var>"&gt;
+        &lt;source media="(max-width: 1050px)" width=700 srcset="<var>Caminho/Arquivo</var>" type="image/<var>Extensão</var>"&gt;
+        &lt;img width=1000 src="<var>Caminho/Arquivo</var>" alt="<var>Descrição Da Imagem</var>"&gt;
+    &lt;/picture&gt;</pre>
+                        <p>Tomando como exemplo 3 imagens de mesmo conteúdo, de 150px, 750px e 1000px respectivamente:</p><br>
                         <pre class="Smallest">&lt;picture&gt;
-    &lt;source media="(max-width: 750px)" width=150 srcset="<var>Caminho/Arquivo</var>" type="image/<var>Extensão</var>"&gt;
-    &lt;source media="(max-width: 1050px)" width=700 srcset="<var>Caminho/Arquivo</var>" type="image/<var>Extensão</var>"&gt;
-    &lt;img width=1000 src="<var>Caminho/Arquivo</var>" alt="<var>Descrição Da Imagem</var>"&gt;
-&lt;/picture&gt;</pre>
-                    <p>Tomando como exemplo 3 imagens de mesmo conteúdo, de 150px, 750px e 1000px respectivamente:</p><br>
-                    <pre class="Smallest">&lt;picture&gt;
-    &lt;source media="(max-width: 750px)" srcset="<var>Caminho/Arquivo150px</var>" type="image/<var>Extensão</var>"&gt;
-    &lt;source media="(max-width: 1050px)" srcset="<var>Caminho/Arquivo700px</var>" type="image/<var>Extensão</var>"&gt;
-    &lt;img src="<var>Caminho/Arquivo1000px</var>" alt="<var>Descrição Da Imagem</var>"&gt;
-&lt;/picture&gt;</pre> 
-    <small>&lt;!--Sempre na ordem do maior para o menor, ou do menor para o maior (no caso usando min-width)--&gt;</small>                    
-                        <hr>
-                    </div><br>
-                </li>
-                <li>Áudio<br>
-                    <div>
-                        <hr>
-                        <pre class="Small">&lt;audio&gt;   &lt;!--preload="metadata" autoplay muted controls loop--&gt;
-    &lt;source src="<var>Caminho/Arquivo.mp3</var>" type="audio/mpeg"&gt;
-    &lt;source src="<var>Caminho/Arquivo.ogg</var>" type="audio/ogg"&gt;
-    &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio&lt;/p&gt;
-&lt;/audio&gt;</pre>
-                        <hr>
-                    </div>
-                </li>
-                <li>Vídeo<br>
-                    <ul class="Hide">
-                        <li>&ensp;Do próprio servidor
-                            <div>
-                                <hr>
-                                <pre class="Small">&lt;video&gt; &lt;!--witdh="<var>?</var>" preload="metadata" autoplay muted controls loop--&gt;
-    &lt;source src="<var>Caminho/Arquivo.mp4</var>" type="video/mp4"&gt;
-    &lt;source src="<var>Caminho/Arquivo.m4v</var>" type="video/mp4"&gt;
-    &lt;source src="<var>Caminho/Arquivo.webm</var>" type="video/webm"&gt;
-    &lt;source src="<var>Caminho/Arquivo.ogv</var>" type="video/ogv"&gt;
-    &lt;p&gt;Infelizmente seu navegador não consegue reproduzir vídeo&lt;/p&gt;
-&lt;/video&gt;</pre>
-                                <p><Small>*Pode gerar muito tráfico de dados dependendo do tamanho dos arquivos. Aumentando consideravelmente o custo da operação</Small></p>
-                                <hr>
-                            </div><br>
-                        </li>
-                        <li>&ensp;Incorporados da internet
-                            <div>
-                                <hr>
-                            <p>Nas plataformas de streaming como YouTube ou Vimeo pode-se clicar em compartilhar e buscar a opção incorporar, aí é só copiar e colar no código. Dessa forma não gera mais tráfego no próprio servidor. Lembrando sempre dos direitos autorais</p>
-                                <hr>
-                            </div><br>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-    </article><br>
+        &lt;source media="(max-width: 750px)" srcset="<var>Caminho/Arquivo150px</var>" type="image/<var>Extensão</var>"&gt;
+        &lt;source media="(max-width: 1050px)" srcset="<var>Caminho/Arquivo700px</var>" type="image/<var>Extensão</var>"&gt;
+        &lt;img src="<var>Caminho/Arquivo1000px</var>" alt="<var>Descrição Da Imagem</var>"&gt;
+    &lt;/picture&gt;</pre> 
+        <small>&lt;!--Sempre na ordem do maior para o menor, ou do menor para o maior (no caso usando min-width)--&gt;</small>                    
+                            <hr>
+                        </div><br>
+                    </li>
+                    <li>Áudio<br>
+                        <div>
+                            <hr>
+                            <pre class="Small">&lt;audio&gt;   &lt;!--preload="metadata" autoplay muted controls loop--&gt;
+        &lt;source src="<var>Caminho/Arquivo.mp3</var>" type="audio/mpeg"&gt;
+        &lt;source src="<var>Caminho/Arquivo.ogg</var>" type="audio/ogg"&gt;
+        &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio&lt;/p&gt;
+    &lt;/audio&gt;</pre>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>Vídeo<br>
+                        <ul class="Hide">
+                            <li>&ensp;Do próprio servidor
+                                <div>
+                                    <hr>
+                                    <pre class="Small">&lt;video&gt; &lt;!--witdh="<var>?</var>" preload="metadata" autoplay muted controls loop--&gt;
+        &lt;source src="<var>Caminho/Arquivo.mp4</var>" type="video/mp4"&gt;
+        &lt;source src="<var>Caminho/Arquivo.m4v</var>" type="video/mp4"&gt;
+        &lt;source src="<var>Caminho/Arquivo.webm</var>" type="video/webm"&gt;
+        &lt;source src="<var>Caminho/Arquivo.ogv</var>" type="video/ogv"&gt;
+        &lt;p&gt;Infelizmente seu navegador não consegue reproduzir vídeo&lt;/p&gt;
+    &lt;/video&gt;</pre>
+                                    <p><Small>*Pode gerar muito tráfico de dados dependendo do tamanho dos arquivos. Aumentando consideravelmente o custo da operação</Small></p>
+                                    <hr>
+                                </div><br>
+                            </li>
+                            <li>&ensp;Incorporados da internet
+                                <div>
+                                    <hr>
+                                <p>Nas plataformas de streaming como YouTube ou Vimeo pode-se clicar em compartilhar e buscar a opção incorporar, aí é só copiar e colar no código. Dessa forma não gera mais tráfego no próprio servidor. Lembrando sempre dos direitos autorais</p>
+                                    <hr>
+                                </div><br>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </article><br>
     </main>
     <article>
         <h2>Algumas considerações:<span style="color: red;"><small>(rascunho)</small></span></h2>
