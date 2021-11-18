@@ -106,11 +106,9 @@ h3, h4 {
         padding: 2px;
         margin: 10px;
 }
-p {
+p , pre, code{
         margin-top: 5px;
-        margin-right: 0px;
         margin-bottom: 5px;
-        margin-left: 0px;
         text-align: left;
         font-size: var(--font-x3);
 }
@@ -147,13 +145,7 @@ a {
 hr {
         margin: 8px;
 }
-pre {
-        margin-top: 5px;
-        margin-right: 0px;
-        margin-bottom: 5px;
-        margin-left: 0px;
-        padding: 0px;
-        font-size: var(--font-x3);
+pre{
         font-family: "Times New Roman", Times, serif;
 }
 .H1 {
