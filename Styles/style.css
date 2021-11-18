@@ -62,14 +62,10 @@ body {
         background-attachment: fixed;
 }
 header {
-        box-shadow:  0px 20px 15px 0px #000000d3;
-        background-color: rgb(0, 0, 0);
+        box-shadow:  0px 15px 15px 0px #000000d3;
+        background-color: rgba(0, 0, 0, 0.798);
         position: fixed;
-        border: 10px;
-        border-color: black;
-        border-width: 10px;
         width: 100%;
-        padding: 0px 0px 5px 0px;
         color: white;
 }
 article {
@@ -152,7 +148,7 @@ pre{
         box-shadow:  0px 20px 15px 0px #000000d3;
         background-color: rgb(0, 0, 0);
         color: white;
-        padding-top: 15px;
+        padding-top: 12px;
 }
 .Small , small , .Footer{
         font-size: var(--font-x6);
