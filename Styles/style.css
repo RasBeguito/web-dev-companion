@@ -48,13 +48,6 @@ head {
                 --font-x7: 0.45rem;
         }
 }
-@media (min-width: 980px) {
-        :root {
-                font-size: 26px;
-                --font-x6: 0.6rem;
-                --font-x7: 0.6rem;
-        }
-}
 body {
         background-image: url(../images/bgtable.jpg);
         background-position: center;
@@ -73,7 +66,7 @@ article {
         background-color: #fafafa;
         padding: 3%;
         border-radius: 5px;
-        max-width: 900px;
+        max-width: 850px;
         min-width: 310px;
         margin: auto;
         border:10px;
