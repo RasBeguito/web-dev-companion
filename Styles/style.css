@@ -1,6 +1,8 @@
 @charset "UTF-8";
-head {
-        font-family: Arial, Helvetica, sans-serif;
+* {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
 }
 :root {
         font-size: 6vw;
@@ -11,6 +13,12 @@ head {
         --font-x5: 0.6rem;
         --font-x6: 0.4rem;
         --font-x7: 0.3rem;
+}
+html {
+        scroll-behavior: smooth;
+}
+head {
+        font-family: Arial, Helvetica, sans-serif;
 }
 @media (min-width: 360px) {
         :root {
@@ -48,14 +56,28 @@ head {
         }
 }
 body {
-        background-color: rgb(0, 55, 100);
+        background-image: url(../images/bgtable.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
 }
-article, header {
-        box-shadow:  0px 10px 8px 0px #000000a8;
+header {
+        box-shadow:  15px 15px 10px 10px #000000ce;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        border: 10px;
+        border-color: black;
+        border-width: 10px;
+        width: 100%;
+        padding: 0px 0px 10px 0px;
+        color: white;
+}
+article {
+        box-shadow:  15px 15px 10px 10px #000000d0;
         background-color: #fafafa;
-        padding: 10px;
-        border-radius: 10px;
-        max-width: 1000px;
+        padding: 15px;
+        border-radius: 5px;
+        max-width: 900px;
         min-width: 320px;
         margin: auto;
         border:10px;
@@ -82,24 +104,24 @@ h2 {
 h3, h4 {
         font-size: var(--font-x3);
         padding: 2px;
-        margin: 1px;
+        margin: 10px;
 }
 p {
-        margin-top: 1px;
+        margin-top: 5px;
         margin-right: 0px;
-        margin-bottom: 1px;
+        margin-bottom: 5px;
         margin-left: 0px;
         text-align: left;
-        font-size: var(--font-x4);
+        font-size: var(--font-x3);
 }
 li {
-        font-size:var(--font-x4) ;
+        font-size:var(--font-x3) ;
 }
 li, ul {
         padding: 0px;
-        margin-top: 0px;
+        margin-top: 2px;
         margin-right: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
         margin-left: 1px;
         display:inline;
         cursor: pointer;
@@ -131,12 +153,18 @@ pre {
         margin-bottom: 5px;
         margin-left: 0px;
         padding: 0px;
-        font-size: var(--font-x4);
+        font-size: var(--font-x3);
 }
-.Small {
+.TopPage {
+        padding-top: 100px;
+}
+.H1 {
+        color: white;
+}
+.Small , small , .Footer{
         font-size: var(--font-x6);
 }
-.Smallest {
+.Smallest{
         font-size: var(--font-x7);
 }
 a:hover {
@@ -167,12 +195,6 @@ article.img {
         text-align: center;
         padding: 0px;
 }
-small {
-        font-size: var(--font-x6);
-}
-.Footer {
-        size: var(--font-x6);
-    }
 span.Footer {
         color: #fafafa;
 }
