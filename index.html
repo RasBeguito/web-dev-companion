@@ -24,14 +24,14 @@
         <h2>HTML - Hyper Text Markup Language (Linguagem de Marcação de Hipertexto)<span style="color: red;"><small>(rascunho)</small></span></h2>
             <p>&ensp;Serve para introduzir o conteúdo da página web, tal como os textos e as mídias, adicionando toda a semântica dos mesmos. Dizendo o que é o cabeçalho, título, parágrafo, imagem, citações, quais são as frases fortes, e em destaque, dizer qual parte deve ser enfatizada, etc. Através das TAGS. Criando assim a estrutura do conteúdo da página.</p>
             <br>
-            <p>&ensp;Algumas tags não apresentam tag de fechamento, como no caso de &lt;img src="https://google.com" alt="Site da Google"/&gt;. Existem algumas que não possuem nem o / no final da tag. Isso porque todas as informações já estão contidas no atributo, ou seja, dentro da tag.</p>
+            <p>&ensp;Algumas tags não apresentam tag de fechamento, como no caso de <code>&lt;img src="https://google.com" alt="Site da Google"/&gt;</code>. Existem algumas que não possuem nem o / no final da tag. Isso porque todas as informações já estão contidas no atributo, ou seja, dentro da tag.</p>
             <br>
-            <p>&ensp;É o sucessor da linguagem SGML (Standard Generalized Markup Language, ou Linguagem Padrão de Marcação Generalizada), que usa colchetes angulares("&lt;" e "&gt;") para separar anotações do texto comum. Em HTML essas anotações são chamadas de "tags"</p>
+            <p>&ensp;É o sucessor da linguagem SGML (Standard Generalized Markup Language, ou Linguagem Padrão de Marcação Generalizada), que usa colchetes angulares(<code>"&lt;" e "&gt;"</code>) para separar anotações do texto comum. Em HTML essas anotações são chamadas de "tags"</p>
             <br>
             <p>&ensp;Não é uma linguagem de programação, e sim uma linguagem de marcação, como ja diz o nome. Então diz-se que se desenvolve em HTML</p>
             <br> 
         <h3>Elementos:</h3>
-            <p>&ensp;Elementos são as peças que compõem a linguagem HTML. O parágrafo (&lt;p&gt;&lt;/p&gt;) é um elemento, assim como a cabeça (&lt;head&gt;&lt;/head&gt;), o corpo(&lt;body&gt;&lt;/body&gt;), o título (&lt;h1&gt;&lt;/h1&gt;), o cabeçalho, etc.</p>
+            <p>&ensp;Elementos são as peças que compõem a linguagem HTML. O parágrafo (<code>&lt;p&gt;&lt;/p&gt;</code>) é um elemento, assim como a cabeça (<code>&lt;head&gt;&lt;/head&gt;</code>), o corpo(<code>&lt;body&gt;&lt;/body&gt;</code>), o título (<code>&lt;h1&gt;&lt;/h1&gt;</code>), o cabeçalho, etc.</p>
             <br>
         <h3>Pai, filho e irmão:</h3>
             <p>&ensp;Quando um elemento contém outro elemento, diz-se que ele é pai (parent).</p>
@@ -47,8 +47,9 @@
             <small>Por exemplo:</small>
             <br>
             <pre>
-&lt;blockquote id="PoemaDosSetePassos" class="Poemas"&gt;
-    &lt;pre&gt;
+                <code>
+&lt;<var>blockquote</var> id="<var>PoemaDosSetePassos</var>" class="<var>Poemas</var>"&gt;
+    <var>&lt;pre&gt;
 Ramos secos de feijão queimam para cozinhar o grão.
 No interior da panela, está o feijão a se lamentar.
 "Se temos a mesma origem e crescemos juntos,
@@ -56,17 +57,19 @@ Por que agora há tanto sofrimento entre nós?"
 
                             &lt;small&gt;Cao Zhi&lt;/small&gt;
     &lt;/pre&gt;
-&lt;/blockquote&gt;
-            </span></pre>
-
+&lt;/blockquote&gt;</var>
+                </code>            
+            </pre>
             <p>&ensp;Por meio do atributo id, o parágrafo passa a ter um identificador único, PoemaDosSetePassos, e por meio do atributo class passa a fazer parte da classe Poemas</p>
             <br>
             <pre>
-&lt;ol start="5"&gt;
-    &lt;li&gt;Luz&lt;/li&gt;
+                <code>
+&lt;<var>ol</var> start="<var>5</var>"&gt;
+    <var>&lt;li&gt;Luz&lt;/li&gt;
     &lt;li&gt;Câmera&lt;/li&gt;
     &lt;li&gt;Ação&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ol&gt;</var>
+                </code>
             </pre>
             <p>&ensp;Por meio do atributo start, essa lista ordenada começará a partir do número 5.</p>
             <p>&ensp;O que define o valor do atributo, é chamado de valor mesmo.</p>
@@ -74,7 +77,8 @@ Por que agora há tanto sofrimento entre nós?"
             <p>&ensp;Os atributos id e class são muito importantes. Quando for fazer uso do CSS por exemplo. Você pode estilizar uma parte especifica da página usando-os</p>
             <br> 
             <h4>Atributos Globais:</h4>
-            <p>&ensp;São os que podem ser usadas por qualquer tag, como por exemplo id e class</p>
+            <p>&ensp;São os que podem ser usadas por qualquer elemento, como por exemplo id e class</p>
+            <p>&ensp;Existem algumas raras exceções, com regras de uso. Como o elemento &lt;meta&gt;</p>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#list_of_global_attributes" target="blank" rel="external">Aqui</a> temos uma lista dos atributos globais</p>
             <br>
         <h4>Atributos Não Globais:</h4>
