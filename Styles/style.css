@@ -5,7 +5,7 @@
         box-sizing: border-box;
 }
 :root {
-        font-size: 6vw;
+        font-size: 4vw;
         --font-x1: 1rem;
         --font-x2: 0.9rem;
         --font-x3: 0.8rem;
@@ -75,10 +75,10 @@ header {
 article {
         box-shadow:  15px 15px 10px 10px #000000d0;
         background-color: #fafafa;
-        padding: 15px;
+        padding: 2%;
         border-radius: 5px;
         max-width: 900px;
-        min-width: 320px;
+        min-width: 310px;
         margin: auto;
         border:10px;
         border-color: black;
@@ -154,6 +154,7 @@ pre {
         margin-left: 0px;
         padding: 0px;
         font-size: var(--font-x3);
+        font-family: "Times New Roman", Times, serif;
 }
 .H1 {
         box-shadow:  0px 20px 15px 0px #000000d3;
