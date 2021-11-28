@@ -200,13 +200,22 @@
                         <div>
                             <hr>
                                 <code>&lt;del&gt;&lt;/del&gt;</code>
-                                <p>Uma parte do texto que foi excluída de um documento. É tipicamente mostrado riscado.</p>
-                                <p>Possíveis atributos: Globais, cite, datetime</p>
+                                <p>*Uma parte do texto que foi excluída de um documento. É tipicamente mostrado riscado.</p>
+                                <p>*Possíveis atributos: Globais, cite, datetime</p>
                             <hr>
                         </div>
                     </li>
                     <li>Citação<br>
                         <ul class="Hide">
+                            <li>Referência &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite" target="_blank" rel="external">MDN</a></span><br>
+                                <div>
+                                    <hr>
+                                        <code>&lt;cite&gt;&lt;/cite&gt;</code>
+                                        <p>*Referência a um trabalho artístico, um documento, um manual, etc.</p>
+                                        <p>*Possíveis atributos: Globais.</p>
+                                    <hr>
+                                </div>
+                            </li>
                             <li>&ensp;Frase curta &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q" target="_blank" rel="external">MDN</a></span><br>
                                 <div>
                                     <hr>
@@ -239,7 +248,7 @@
                     <li>Subscrito H<sub>2</sub>O &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
-                                <code><sub></sub></code>
+                                <code>&lt;sub&gt;&lt;/sub&gt;</code>
                                 <p>*Usado por razões tipográficas.</p>
                                 <p>*Possiveis atributos: Globais.</p>
                             <hr>
@@ -258,87 +267,60 @@
                         <div>
                             <hr>
                                 <code>&lt;mark&gt;&lt;/mark&gt;</code>
-                                <p>Denota trechos de relevância especial, exibido com um marca texto.</p>
-                                <p>Possíveis atributos: Globais.</p>
+                                <p>*Denota trechos de relevância especial, exibido com um marca texto.</p>
+                                <p>*Possíveis atributos: Globais.</p>
                             <hr>
                         </div>
                     </li>
-                    <li>Entrada de comando &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
+                    <li>Entrada de comando &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
                                 <code>&lt;kbd&gt;&lt;/kbd&gt;</code>
-                                <p>Denota uma entrada textual de um comando que pode ser usado na página.</p>
-                                <p>Possíveis atributos: Globais.</p>
+                                <p>*Denota uma entrada textual de um comando.</p>
+                                <p>*Possíveis atributos: Globais.</p>
                             <hr>
                         </div>
                     </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
+                    <li>Quebra de linha opcional &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/wbr" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
-                                <code></code>
+                                <code>&lt;wbr&gt;</code>
+                                <p>*Define onde é aceitável uma quebra de linha, se necessário.</p>
+                                <p>*Possíveis atributos: Globais.</p>
                             <hr>
                         </div>
                     </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
+                    <li>Mensagem de um programa &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
-                                <code></code>
+                                <code>&lt;samp&gt;&lt;/samp&gt;</code>
+                                <p>*Denota a mensagem de um programa</p>
+                                <p>*Possíveis atributos: Globais.</p>
                             <hr>
                         </div>
                     </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
+                    <li>Pronúncia &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ruby" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
-                                <code></code>
+                                <pre><code>&lt;ruby&gt;
+    漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+    字 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;</code></pre>
+                                <code>&lt;rt&gt; &lt;!--Ruby text element--&gt;</code>
+                                <code>&lt;rp&gt; &lt;!--Ruby Fallback parentesis element--&gt;</code>
+                                <p>Um pequeno texto acoplado ao texto principal, que indica a pronúncia da palavra.</p>
+                                <p>*Possíveis atributos: Globais.</p>
+                                <p>*Originalmente feito para mostrar pronúncia de caracteres do Leste Asiático.</p>
                             <hr>
                         </div>
                     </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
+                    <li>Linha de código &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code" target="_blank" rel="external">MDN</a></span><br>
                         <div>
                             <hr>
-                                <code></code>
-                            <hr>
-                        </div>
-                    </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
-                        <div>
-                            <hr>
-                                <code></code>
-                            <hr>
-                        </div>
-                    </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
-                        <div>
-                            <hr>
-                                <code></code>
-                            <hr>
-                        </div>
-                    </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
-                        <div>
-                            <hr>
-                                <code></code>
-                            <hr>
-                        </div>
-                    </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
-                        <div>
-                            <hr>
-                                <code></code>
-                            <hr>
-                        </div>
-                    </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
-                        <div>
-                            <hr>
-                                <code></code>
-                            <hr>
-                        </div>
-                    </li>
-                    <li> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br>
-                        <div>
-                            <hr>
-                                <code></code>
+                                <code>&lt;code&gt;&lt;/code&gt;</code>
+                                <p>*Indicar que o texto é um pequeno fragmento de código.</p>
+                                <p>*Possíveis atributos: Globais.</p>
+                                <p>*Para representar múltiplas linha de código,  envolva o elemento &lt;code&gt;  dentro do elemento &lt;pre&gt;.</p>
                             <hr>
                         </div>
                     </li>
