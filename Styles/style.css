@@ -90,21 +90,21 @@ h1 {
 h2 {
         font-size: var(--font-x2);
 }
-h3, h4 {
+h3 , h4 {
         font-size: var(--font-x3);
         padding: 2px;
         margin: 10px;
 }
-p , pre, code{
+dd , p , pre , code{
         margin-top: 5px;
         margin-bottom: 5px;
         text-align: left;
         font-size: var(--font-x3);
 }
-li {
+dt {
         font-size:var(--font-x3) ;
 }
-li, ul {
+dt, dl {
         padding: 0px;
         margin-top: 2px;
         margin-right: 0px;
@@ -150,22 +150,19 @@ pre{
         font-size: var(--font-x7);
 }
 a:hover {
-        color: rgb(255, 0, 0);
+        color: rgb(255, 72, 72);
 }
 div.LeftAlign {
     text-align: left;
 }
-ul.Hide > li > div , ul.Hide > li > span.HidedLink {
+dl.Hide > div , dl.Hide > dt > span{
         display: none;
 }
-ul.Hide > li:hover > div , ul.Hide > li:hover > span.HidedLink {
-        display:inline;
+dt:hover + div , dl.Hide > dt:hover > span{
+                    display:inline;
 }
-li:hover {
+dt:hover {
         color:forestgreen;
-}
-li:hover > div {
-        color:initial;
 }
 img {
         max-width: 100%;
