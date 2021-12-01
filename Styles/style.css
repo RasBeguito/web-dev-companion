@@ -96,8 +96,8 @@ h3 , h4 {
         margin: 10px;
 }
 dd , p , pre , code{
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
         text-align: left;
         font-size: var(--font-x3);
 }
