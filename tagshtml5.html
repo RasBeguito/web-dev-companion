@@ -25,381 +25,368 @@
 
         <article>  <!--Metadata-->
             <h2>Metadata</h2>
-            <dl class="Hide">
+            <dl class="Hide"> <!--Cabeça-->
                 <dt>Cabeça &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/head" target="_blank" rel="external">MDN</a></span><br></dt>
-                <div>
                     <hr>
                     <dd><code>&lt;head&gt;<var>Outras metadatas aplicadas à página</var>&lt;/head&gt;</code></dd>
                     <dd>*Providencia informações gerais (metadados) sobre  document, incluindo seu título e links para scripts e folhas de estilos.</dd>
                     <dd>*Possíveis atributos: Globais.</dd>
                     <dd>*Possiveis elementos: title, base, link, style, meta, script, noscript.</dd>
                     <hr>
-                </div>
+            </dl>
+            <dl class="Hide"> <!--Título-->
                 <dt>Título &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/title" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                        <dd><code>&lt;title&gt;<var>Titulo da página</var>&lt;/title&gt;</code></dd>
-                        <dd>*Define o título do documento.</dd>
-                        <dd>*Possíveis atributos: Globais.</dd>
-                        <dd>*É sempre usado dentro da &lt;head&gt; da página.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;title&gt;<var>Titulo da página</var>&lt;/title&gt;</code></dd>
+                    <dd>*Define o título do documento.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <dd>*É sempre usado dentro da &lt;head&gt; da página.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Metadata genérica-->
                 <dt>Metadata genérica &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
                         <hr>
                         <dd><code>&lt;meta <var>charset="utf-8"</var>&gt;</code></dd>
                         <dd>*Define qualquer informação de metadados que não podem ser definidos por outros elementos HTML.</dd>
                         <dd>*Possíveis atributos: *Globais     <small style="color: red;">(incompleto por enquanto)</small></dd><!--TODO: Existem diferenças para essa TAG meta (Ler o manual e incrementar as demais informações)-->
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Link padrão na página-->
                 <dt>Link padrão na página &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/base" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                        <dd><code>&lt;head&gt;<br>
-                            &emsp;&lt;base href="<var>https://www.siteexemplo.com.br</var>"&gt;<br>
-                        &lt;/head&gt;<br>
-                        &lt;body&gt;<br>
-                            &emsp;&lt;a href="<var>/contato</var>"&gt;<var>Texto exemplo</var>&lt;/a&gt;<br>
-                        &lt;/body&gt;</code></dd>
-                        <dd>*define uma URL padrão para todos os links da página.</dd>
-                        <dd>*Possíveis atributos: Globais, href, target.</dd>
-                        <dd>*Após ser definido na &lt;head&gt;, é preciso somente o complemento do link na &lt;body&gt;.</dd>
-                        <dd>*Permitido somente 1 TAG por página. Caso haja mais de 1, somente a primeira será utilizada.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;head&gt;<br>
+                        &emsp;&lt;base href="<var>https://www.siteexemplo.com.br</var>"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &emsp;&lt;a href="<var>/contato</var>"&gt;<var>Texto exemplo</var>&lt;/a&gt;<br>
+                    &lt;/body&gt;</code></dd>
+                    <dd>*define uma URL padrão para todos os links da página.</dd>
+                    <dd>*Possíveis atributos: Globais, href, target.</dd>
+                    <dd>*Após ser definido na &lt;head&gt;, é preciso somente o complemento do link na &lt;body&gt;.</dd>
+                    <dd>*Permitido somente 1 TAG por página. Caso haja mais de 1, somente a primeira será utilizada.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Vincular a um documento externo-->
                 <dt>Vincular à um documento externo &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/link" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                        <dd><code>&lt;link&gt;</code></dd>
-                        <dd>*Associa o documento atual à um externo.</dd>
-                        <dd>*Possíveis atributos: Globais, as, href, hreflang, media, rel, type, ⚠️crossorigin, ⚠️disabled, ⚠️methods, ⚠️sizes, ⚠️target.</dd>
-                        <dd>*Escrito apenas no elemento head.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;link&gt;</code></dd>
+                    <dd>*Associa o documento atual à um externo.</dd>
+                    <dd>*Possíveis atributos: Globais, as, href, hreflang, media, rel, type, ⚠️crossorigin, ⚠️disabled, ⚠️methods, ⚠️sizes, ⚠️target.</dd>
+                    <dd>*Escrito apenas no elemento head.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Estilo-->
                 <dt>Estilo &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/style" target="_blank" rel="external">MDN</a></span></dt>
-                    <div>
-                        <hr>
-                        <dd><code>&lt;style&gt;&lt;/style&gt;</code></dd>
-                        <dd>*Define estilos dentro do próprio arquivo HTML.</dd>
-                        <dd>*Possíveis atributos: Globais, type, media, scoped, title, disabled.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;style&gt;&lt;/style&gt;</code></dd>
+                    <dd>*Define estilos dentro do próprio arquivo HTML.</dd>
+                    <dd>*Possíveis atributos: Globais, type, media, scoped, title, disabled.</dd>
+                    <hr>
             </dl>
         </article><br>
 
         <article>  <!--Em linha-->
             <h2>Em linha</h2>
-            <dl class="Hide">
+            <dl class="Hide"> <!--Ancoragem-->
                 <dt>Ancoragem &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;a <var>href="algumsite.com"</var>&gt;<var>Texto relacionado</var>&lt;/a&gt;</code></dd>
-                        <dd>*cria uma hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.</dd>
-                        <dd>*Possiveis atributos: Globais, download, href, hreflang, ping, rel, target, type</dd>
-                        <dd>*O conteúdo dentro de cada &lt;a&gt; precisará indicar o destino do link</dd>
-                        <dd>*linkar uma página com target="_blank" poderá prejudicar a sua página se a nova aba executar JavaScript. Para evitar isso use rel="noreferrer noopener"</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;a <var>href="algumsite.com"</var>&gt;<var>Texto relacionado</var>&lt;/a&gt;</code></dd>
+                    <dd>*cria uma hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.</dd>
+                    <dd>*Possiveis atributos: Globais, download, href, hreflang, ping, rel, target, type</dd>
+                    <dd>*O conteúdo dentro de cada &lt;a&gt; precisará indicar o destino do link</dd>
+                    <dd>*linkar uma página com target="_blank" poderá prejudicar a sua página se a nova aba executar JavaScript. Para evitar isso use rel="noreferrer noopener"</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Transliteração Ruby-->
                 <dt>Transliteração Ruby &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/rt" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;rt&gt;&lt;/rt&gt;</code></dd>
-                            <dd>*Faz a transliteração de um alfabeto diferente. Originalmente do leste asiático.</dd>
-                            <dd>*Possiveis atributos: Globais</dd>
-                            <dd>*Deve ser usado dentro de um elemento ruby</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;rt&gt;&lt;/rt&gt;</code></dd>
+                    <dd>*Faz a transliteração de um alfabeto diferente. Originalmente do leste asiático.</dd>
+                    <dd>*Possiveis atributos: Globais</dd>
+                    <dd>*Deve ser usado dentro de um elemento ruby</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Definição-->
                 <dt>Definição &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dfn" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;dfn&gt;&lt;/dfn&gt;</code></dd>
-                            <dd>representa uma instância de definição de um termo.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;dfn&gt;&lt;/dfn&gt;</code></dd>
+                    <dd>representa uma instância de definição de um termo.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Enfase-->
                 <dt>Ênfase &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/em" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;em&gt;&lt;/em&gt;</code></dd>
-                            <dd>*Marca o texto que tem ênfase.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                            <dd>*Pode ser aninhado, com cada nível de aninhamento indicando um grau maior de ênfase.</dd>
-                            <dd>*Este elemento é mostrado no tipo itálico. Contudo, não deve ser usado simplesmente para aplicar estilo itálico. Use o estilo CSS para esse propósito. E para palavras de outras línguas, termos técnicos, pensamentos de personagens fictícios, outras funções que não seja dar ênfase, usa-se &lt;i&gt;.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;em&gt;&lt;/em&gt;</code></dd>
+                    <dd>*Marca o texto que tem ênfase.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <dd>*Pode ser aninhado, com cada nível de aninhamento indicando um grau maior de ênfase.</dd>
+                    <dd>*Este elemento é mostrado no tipo itálico. Contudo, não deve ser usado simplesmente para aplicar estilo itálico. Use o estilo CSS para esse propósito. E para palavras de outras línguas, termos técnicos, pensamentos de personagens fictícios, outras funções que não seja dar ênfase, usa-se &lt;i&gt;.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Itálico-->
                 <dt>Itálico &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/i" target="_blank" rel="external">MDN</a></span><br></dt><!--TODO: Mover daqui-->
-                    <div>
                         <hr>
                             <dd><code>&lt;i&gt;&lt;/i&gt;</code></dd>
                             <dd>*Representa uma parte do texto que é destacada do restante por algum motivo, por exemplo, termos técnicos, expressões de outros idiomas ou pensamentos de personagens fictícios.</dd>
                             <dd>*Possíveis atributos: Globais.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Fonte menor-->
                 <dt>Fonte menor &emsp; <span class="HidedLink"><a href="https://www.w3schools.com/tags/tag_small.asp" target="_blank" rel="external">W3</a></span><br></dt>
-                    <div>
                         <hr>
                             <dd><code>&lt;small&gt;&lt;/small&gt;</code></dd>
                             <dd>*Define textos menores, como copyright e outros comentários a parte do conteúdo principal.</dd>
                             <dd>*Possíveis atributos: Globais.</dd>
                         <hr>
-                    </div>
-                <dt>inserido &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
+            </dl>
+            <dl class="Hide"> <!--Inserido-->
+                <dt>Inserido &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br></dt>
                         <hr>
                             <dd><code>&lt;ins&gt;&lt;/ins&gt;</code></dd>
                             <dd>*Um texto que foi inserido ao documento</dd>
                             <dd>*Possíveis atributos: Globais, cite, datetime.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Abreviação-->
                 <dt>Abreviação &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
                         <hr>
                             <dd><code>&lt;abbr&gt;&lt;/abbr&gt;</code></dd>
                             <dd>*Representa uma abreviação e opcionalmente fornece uma descrição completa para ela.</dd>
                             <dd>*Possíveis atributos: Globais, title</dd>
                             <dd>*Se presente, o atributo title deve conter a descrição completa e apenas ela.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Tempo-->
                 <dt>Tempo &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/time" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
                         <hr>
                             <dd><code>&lt;time&gt;&lt;/time&gt;</code></dd>
                             <dd>*Apresenta datas e horas no dispositivo em um formato legível.</dd>
                             <dd>*Possíveis atributos: Globais, datetime, pubdate.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Forte-->
                 <dt>Forte &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;strong&gt;&lt;/strong&gt;</code></dd>
-                            <dd>*Dá ao texto uma forte importância. É tipicamente mostrado em negrito.</dd>
-                            <dd>Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;strong&gt;&lt;/strong&gt;</code></dd>
+                    <dd>*Dá ao texto uma forte importância. É tipicamente mostrado em negrito.</dd>
+                    <dd>Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Deletado-->
                 <dt>Deletado &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;del&gt;&lt;/del&gt;</code></dd>
-                            <dd>*Uma parte do texto que foi excluída de um documento. É tipicamente mostrado riscado.</dd>
-                            <dd>*Possíveis atributos: Globais, cite, datetime</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;del&gt;&lt;/del&gt;</code></dd>
+                    <dd>*Uma parte do texto que foi excluída de um documento. É tipicamente mostrado riscado.</dd>
+                    <dd>*Possíveis atributos: Globais, cite, datetime</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Referencia-->
                 <dt>Referência &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;cite&gt;&lt;/cite&gt;</code></dd>
-                            <dd>*Referência a um trabalho artístico, um documento, um manual, etc.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;cite&gt;&lt;/cite&gt;</code></dd>
+                    <dd>*Referência a um trabalho artístico, um documento, um manual, etc.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Citação curta-->
                 <dt>Citação curta &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;q&gt;&lt;/q&gt;</code></dd>
-                            <dd>*Uma pequena citação, que não requer marcação de parágrafo.</dd>
-                            <dd>*Possíveis elementos: Globais, cite.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;q&gt;&lt;/q&gt;</code></dd>
+                    <dd>*Uma pequena citação, que não requer marcação de parágrafo.</dd>
+                    <dd>*Possíveis elementos: Globais, cite.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Variável-->
                 <dt>Variável &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/var" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;var&gt;&lt;/var&gt;</code></dd>
-                            <dd>*Representa uma variável em uma expressão matemática ou um contexto de programação.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;var&gt;&lt;/var&gt;</code></dd>
+                    <dd>*Representa uma variável em uma expressão matemática ou um contexto de programação.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Subscrito-->
                 <dt>Subscrito H<sub>2</sub>O &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;sub&gt;&lt;/sub&gt;</code></dd>
-                            <dd>*Usado por razões tipográficas.</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;sub&gt;&lt;/sub&gt;</code></dd>
+                    <dd>*Usado por razões tipográficas.</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Sobrescrito-->
                 <dt>Sobrescrito b<sup>2</sup> &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;sup&gt;&lt;/sup&gt;</code></dd>
-                            <dd>*Usado por razões tipográficas.</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;sup&gt;&lt;/sup&gt;</code></dd>
+                    <dd>*Usado por razões tipográficas.</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Destacado-->
                 <dt>Destacado &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/mark" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;mark&gt;&lt;/mark&gt;</code></dd>
-                            <dd>*Denota trechos de relevância especial, exibido com um marca texto.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;mark&gt;&lt;/mark&gt;</code></dd>
+                    <dd>*Denota trechos de relevância especial, exibido com um marca texto.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Entrada de comando-->
                 <dt>Entrada de comando &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;kbd&gt;&lt;/kbd&gt;</code></dd>
-                            <dd>*Denota uma entrada textual de um comando.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;kbd&gt;&lt;/kbd&gt;</code></dd>
+                    <dd>*Denota uma entrada textual de um comando.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Quebra de linha opcional-->
                 <dt>Quebra de linha opcional &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/wbr" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;wbr&gt;</code></dd>
-                            <dd>*Define onde é aceitável uma quebra de linha, se necessário.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;wbr&gt;</code></dd>
+                    <dd>*Define onde é aceitável uma quebra de linha, se necessário.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Mensagem de um programa-->
                 <dt>Mensagem de um programa &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;samp&gt;&lt;/samp&gt;</code></dd>
-                            <dd>*Denota a mensagem de um programa</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;samp&gt;&lt;/samp&gt;</code></dd>
+                    <dd>*Denota a mensagem de um programa</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Pronúncia-->
                 <dt>Pronúncia &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ruby" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <pre><dd><code>&lt;ruby&gt;
+                    <hr>
+                    <dd><pre><code>&lt;ruby&gt;
     漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
     字 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
-    &lt;/ruby&gt;</code></dd></pre>
-                            <br>
-                            <span>
-                            Resultado: &ensp;
-                            <ruby>
-                                漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
-                                字 <rp>(</rp><rt>ji</rt><rp>)</rp>
-                            </ruby>
-                            </span>
-                            <br>
-                            <span>
-                            <dd><code>&lt;rt&gt; &lt;!--Ruby text element--&gt;</code></dd>
-                            <br>
-                            <dd><code>&lt;rp&gt; &lt;!--Ruby Fallback parentesis element--&gt;</code></dd>
-                            </span>
-                            <br>
-                            <dd>*Um pequeno texto acoplado ao texto principal, que indica a pronúncia da palavra.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                            <dd>*Originalmente feito para mostrar pronúncia de caracteres do Leste Asiático.</dd>
-                        <hr>
-                    </div>
+&lt;/ruby&gt;</code></pre>
+                    <br>                   
+                    Resultado: &ensp;
+                    <ruby>
+                        漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                        字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+                    </ruby></dd>                    
+                    
+                    <dd><br><code>&lt;rt&gt; &lt;!--Ruby text element--&gt;</code></dd>
+                    <dd><code>&lt;rp&gt; &lt;!--Ruby Fallback parentesis element--&gt;</code></dd>
+                    <dd><br>*Um pequeno texto acoplado ao texto principal, que indica a pronúncia da palavra.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <dd>*Originalmente feito para mostrar pronúncia de caracteres do Leste Asiático.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Linha de código-->
                 <dt>Linha de código &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/code" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;code&gt;&lt;/code&gt;</code></dd>
-                            <dd>*Indicar que o texto é um pequeno fragmento de código.</dd>
-                            <dd>*Possíveis atributos: Globais.</dd>
-                            <dd>*Para representar múltiplas linha de código,  envolva o elemento &lt;code&gt;  dentro do elemento &lt;pre&gt;.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;code&gt;&lt;/code&gt;</code></dd>
+                    <dd>*Indicar que o texto é um pequeno fragmento de código.</dd>
+                    <dd>*Possíveis atributos: Globais.</dd>
+                    <dd>*Para representar múltiplas linha de código,  envolva o elemento &lt;code&gt;  dentro do elemento &lt;pre&gt;.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Conteiner genérico-->
                 <dt>Conteiner genérico &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/span" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;span&gt;&lt;/span&gt;</code></dd>
-                            <dd>*Não representa nada por natureza. Deve ser usado somente quando nenhum outro elemento semântico for apropriado</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;span&gt;&lt;/span&gt;</code></dd>
+                    <dd>*Não representa nada por natureza. Deve ser usado somente quando nenhum outro elemento semântico for apropriado</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
             </dl>
         </article>
         <br>
 
-        <article>
+        <article> <!--Em bloco-->
             <h2>Em bloco<span style="color: red;"><small>(rascunho)</small></span></h2>
-            <dl class="Hide">
+            <dl class="Hide"> <!--Título da seção-->
                 <dt>Título da seção&emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <pre><dd><code>&lt;h1&gt;<var>Título principal</var>&lt;/h1&gt;
-    &lt;h2&gt;<var>Título secundário</var>&lt;/h2&gt;
-    &lt;h3&gt;<var>Título terciário</var>&lt;/h3&gt;</code></dd></pre>
-                            <dd>*Representam seis níveis de título de seção. &lt;h1&gt; é o nível de seção mais alto e &lt;h6&gt; é o mais baixo.</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><pre><code>&lt;h1&gt;<var>Título principal</var>&lt;/h1&gt;
+&lt;h2&gt;<var>Título secundário</var>&lt;/h2&gt;
+&lt;h3&gt;<var>Título terciário</var>&lt;/h3&gt;</code></pre></dd>
+                    <dd>*Representam seis níveis de título de seção. &lt;h1&gt; é o nível de seção mais alto e &lt;h6&gt; é o mais baixo.</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Parágrafo-->
                 <dt>Parágrafo &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
                         <hr>
                             <dd><code>&lt;p&gt;&lt;/p&gt;</code></dd>
                             <dd>*Representa um parágrafo.</dd>
                             <dd>*Possiveis atributos: Globais.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Citação em bloco-->
                 <dt>Citação em bloco &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
                         <hr>
                             <dd><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></dd>
                             <dd>*Uma longa citação.</dd>
                             <dd>*Possíveis atributos: Globais, cite.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl class="Hide"> <!--Legenda da figura-->
                 <dt>Legenda da figura &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/figcaption" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
                         <hr>
                             <dd><code>&lt;figcaption&gt;&lt;/figcaption&gt;</code></dd>
                             <dd>*Legenda associada com uma figura ou ilustração</dd>
                             <dd>*Possiveis atributos: Globais.</dd>
                         <hr>
-                    </div>
+            </dl>
+            <dl> <!--Lista-->
                 <dt>Lista</dt><br>
-                    <dl class="Hide">
+                    <dl class="Hide"> <!--Lista ordenada-->
                         <dt>&emsp;Lista ordenada &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol" target="_blank" rel="external">MDN</a></span><br></dt>
-                            <div>
-                                <hr>
-                                    <dd><code><ol></ol></code></dd>
-                                    <dd>*Lista onde as posições dos itens são relevantes</dd>
-                                    <dd>*Possiveis atributos: Globais, reversed, start, type.</dd>
-                                <hr>
-                            </div>
-                        <dt>&emsp;Lista não ordenada &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul" target="_blank" rel="external">MDN</a></span><br></dt>
-                            <div>
-                                <hr>
-                                    <dd><code>&lt;ul&gt;&lt;/ul&gt;</code></dd>
-                                    <dd>*Lista onde as posições dos itens são irrelevantes</dd>
-                                    <dd>*Possiveis atributos: Globais.</dd>
-                                <hr>
-                            </div>
-        
-                        <dt>&emsp;Itens da lista &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li" target="_blank" rel="external">MDN</a></span><br></dt>
-                            <div>
-                                <hr>
-                                    <dd><code>&lt;li&gt;&lt;/li&gt;</code></dd>
-                                    <dd>*Os itens da lista.</dd>
-                                    <dd>*Possiveis atributos: Globais, value.</dd>
-                                <hr>
-                            </div>
+                            <hr>
+                            <dd><code><ol></ol></code></dd>
+                            <dd>*Lista onde as posições dos itens são relevantes</dd>
+                            <dd>*Possiveis atributos: Globais, reversed, start, type.</dd>
+                            <hr>
                     </dl>
+                    <dl class="Hide"> <!--Lista não ordenada-->
+                        <dt>&emsp;Lista não ordenada &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul" target="_blank" rel="external">MDN</a></span><br></dt>
+                            <hr>
+                            <dd><code>&lt;ul&gt;&lt;/ul&gt;</code></dd>
+                            <dd>*Lista onde as posições dos itens são irrelevantes</dd>
+                            <dd>*Possiveis atributos: Globais.</dd>
+                            <hr>
+                    </dl>
+                    <dl class="Hide"> <!--Itens da lista-->       
+                        <dt>&emsp;Itens da lista &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li" target="_blank" rel="external">MDN</a></span><br></dt>
+                            <hr>
+                            <dd><code>&lt;li&gt;&lt;/li&gt;</code></dd>
+                            <dd>*Os itens da lista.</dd>
+                            <dd>*Possiveis atributos: Globais, value.</dd>
+                            <hr>
+                    </dl>
+            </dl>
+            <dl class="Hide">
                 <dt> &emsp; <span class="HidedLink"><a href="" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code><dl></dl></code></dd>
-                            <dd>*</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code><dl></dl></code></dd>
+                    <dd>*</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Conteiner genérico-->
                 <dt>Conteiner generico &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;div&gt;&lt;/div&gt;</code></dd>
-                            <dd>*Não representa nada por natureza. Deve ser usado somente quando nenhum outro elemento semântico for apropriado</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;div&gt;&lt;/div&gt;</code></dd>
+                    <dd>*Não representa nada por natureza. Deve ser usado somente quando nenhum outro elemento semântico for apropriado</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Quebra de linha-->
                 <dt>Quebra de linha &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/br" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <code>&lt;br&gt;</code>
-                            <p>*Produz uma quebra de linha em um texto.</p>
-                            <p>*Possiveis atributos: Globais.</p>
-                        <hr>
-                    </div>
+                    <hr>
+                    <code>&lt;br&gt;</code>
+                    <p>*Produz uma quebra de linha em um texto.</p>
+                    <p>*Possiveis atributos: Globais.</p>
+                    <hr>
+            </dl>
+            <dl class="Hide"> <!--Quebra temática-->
                 <dt>Quebra temática &emsp; <span class="HidedLink"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/hr" target="_blank" rel="external">MDN</a></span><br></dt>
-                    <div>
-                        <hr>
-                            <dd><code>&lt;hr&gt;</code></dd>
-                            <dd>*Representa, por meio de uma linha, uma quebra temática entre elementos de nível de parágrafo (por exemplo , uma mudança da cena de uma história, ou uma mudança de tema com uma seção).</dd>
-                            <dd>*Possiveis atributos: Globais.</dd>
-                        <hr>
-                    </div>
+                    <hr>
+                    <dd><code>&lt;hr&gt;</code></dd>
+                    <dd>*Representa, por meio de uma linha, uma quebra temática entre elementos de nível de parágrafo (por exemplo , uma mudança da cena de uma história, ou uma mudança de tema com uma seção).</dd>
+                    <dd>*Possiveis atributos: Globais.</dd>
+                    <hr>
             </dl>
         </article>
         <br>

@@ -155,11 +155,14 @@ a:hover {
 div.LeftAlign {
     text-align: left;
 }
-dl.Hide > div , dl.Hide > dt > span{
+dl.Hide > hr , dl.Hide > dd , dl.Hide > dt > span{
         display: none;
 }
-dt:hover + div , dl.Hide > dt:hover > span{
+dl.Hide > dt:hover > span {
                     display:inline;
+}
+dt:hover ~ hr , dt:hover ~ dd {
+        display: block;
 }
 dt:hover {
         color:forestgreen;
