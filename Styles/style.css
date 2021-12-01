@@ -48,21 +48,25 @@ head {
                 --font-x7: 0.45rem;
         }
 }
-body {
-        background-image: url(../images/bgtable.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-}
 header {
-        box-shadow:  0px 15px 15px 0px #000000d3;
-        background-color: rgba(0, 0, 0, 0.798);
+        box-shadow:15px 15px 10px #000000a8;
+        background-color: #000000a8;
         position: fixed;
         width: 100%;
         color: white;
+        text-align: center;
+}
+section {
+        box-shadow:15px 15px 10px #000000a8;
+        background-color: #000000a8;
+}
+main {
+        background-image: url(../images/bgtable.jpg);
+        background-size: cover;
+        background-attachment: fixed;
 }
 article {
-        box-shadow:  15px 15px 10px 10px #000000d0;
+        box-shadow: 15px 10px 10px #000000d0;
         background-color: #fafafa;
         padding: 3%;
         border-radius: 5px;
@@ -72,22 +76,19 @@ article {
         border:10px;
         border-color: black;
 }
-nav {
-        text-align: center;
-}
 var {
         color:rgb(0, 141, 160)
-}
-h1, h2 {
-        text-align: center;
-        padding: 8px;
-        margin: 1px;
 }
 h1 {
         text-shadow: 0px 2px 2px 0px  #1111115d;
         font-size: var(--font-x1);
+        text-align: center;
+        padding-top: 1px;
 }
 h2 {
+
+        padding: 8px;
+        margin: 1px;
         font-size: var(--font-x2);
 }
 h3 , h4 {
@@ -100,6 +101,15 @@ dd , p , pre , code{
         margin-bottom: 1vh;
         text-align: left;
         font-size: var(--font-x3);
+}
+dd {
+        box-shadow: 15px 10px 10px #000000d0;
+        background-color: white;
+        border-radius: 5px;
+        padding: 1%;
+        border: black;
+        border-width: 1px;
+        border-style: groove;
 }
 dt {
         font-size:var(--font-x3) ;
@@ -129,7 +139,7 @@ a {
         padding-right: 7px;
         background-color: gold;
         border-radius: 10px; 
-        font-size: var(--font-x3);
+        font-size: var(--font-x4);
 }
 hr {
         margin: 8px;
