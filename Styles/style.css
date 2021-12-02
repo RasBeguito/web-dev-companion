@@ -90,6 +90,7 @@ h2 {
         padding: 8px;
         margin: 1px;
         font-size: var(--font-x2);
+        text-align: center;
 }
 h3 , h4 {
         font-size: var(--font-x3);
